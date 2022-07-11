@@ -1,0 +1,794 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F4520 ]
+[d frameptr 4065 ]
+"1 D:\MPLAB\pic\sources\c99\common\abs.c
+[v _abs abs `(i  1 e 2 0 ]
+[v i2_abs abs `(i  1 e 2 0 ]
+"7 D:\MPLAB\pic\sources\c99\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+"9 D:\MPLAB\pic\sources\c99\common\aodiv.c
+[v ___aodiv __aodiv `(o  1 e 8 0 ]
+[v i2___aodiv __aodiv `(o  1 e 8 0 ]
+"9 D:\MPLAB\pic\sources\c99\common\aomod.c
+[v ___aomod __aomod `(o  1 e 8 0 ]
+[v i2___aomod __aomod `(o  1 e 8 0 ]
+"7 D:\MPLAB\pic\sources\c99\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"7 D:\MPLAB\pic\sources\c99\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"72 D:\MPLAB\pic\sources\c99\common\doprnt.c
+[v _pad pad `(i  1 s 2 pad ]
+[v i2_pad pad `(i  1 s 2 i2_pad ]
+"287
+[v _dtoa dtoa `(i  1 s 2 dtoa ]
+[v i2_dtoa dtoa `(i  1 s 2 i2_dtoa ]
+"692
+[v _vfpfcnvrt vfpfcnvrt `(i  1 s 2 vfpfcnvrt ]
+[v i2_vfpfcnvrt vfpfcnvrt `(i  1 s 2 i2_vfpfcnvrt ]
+"1390
+[v _vfprintf vfprintf `(i  1 e 2 0 ]
+[v i2_vfprintf vfprintf `(i  1 e 2 0 ]
+"4 D:\MPLAB\pic\sources\c99\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 D:\MPLAB\pic\sources\c99\common\float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"86 D:\MPLAB\pic\sources\c99\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 D:\MPLAB\pic\sources\c99\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 D:\MPLAB\pic\sources\c99\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 D:\MPLAB\pic\sources\c99\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"8 D:\MPLAB\pic\sources\c99\common\nf_fputc.c
+[v _fputc fputc `(i  1 e 2 0 ]
+[v i2_fputc fputc `(i  1 e 2 0 ]
+"8 D:\MPLAB\pic\sources\c99\common\nf_fputs.c
+[v _fputs fputs `(i  1 e 2 0 ]
+[v i2_fputs fputs `(i  1 e 2 0 ]
+"9 D:\MPLAB\pic\sources\c99\common\nf_sprintf.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+[v i2_sprintf sprintf `(i  1 e 2 0 ]
+"7 D:\MPLAB\pic\sources\c99\common\putch.c
+[v _putch putch `(v  1 e 1 0 ]
+[v i2_putch putch `(v  1 e 1 0 ]
+"10 D:\MPLAB\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 D:\MPLAB\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 D:\MPLAB\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"3 D:\MPLAB\pic\sources\c99\common\strcat.c
+[v _strcat strcat `(*.39uc  1 e 2 0 ]
+[v i2_strcat strcat `(*.39uc  1 e 2 0 ]
+"3 D:\MPLAB\pic\sources\c99\common\strcpy.c
+[v _strcpy strcpy `(*.39uc  1 e 2 0 ]
+[v i2_strcpy strcpy `(*.39uc  1 e 2 0 ]
+"5 D:\MPLAB\pic\sources\c99\common\strlen.c
+[v _strlen strlen `(ui  1 e 2 0 ]
+[v i2_strlen strlen `(ui  1 e 2 0 ]
+"15 D:\MPLAB\pic\sources\c99\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"15 D:\MPLAB\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 D:\MPLAB\pic\sources\c99\common\Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"33 C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+[v _UART_Init UART_Init `(v  1 e 1 0 ]
+"75
+[v _UART_PutC UART_PutC `(v  1 e 1 0 ]
+[v i2_UART_PutC UART_PutC `(v  1 e 1 0 ]
+"81
+[v _UART_Print UART_Print `(v  1 e 1 0 ]
+[v i2_UART_Print UART_Print `(v  1 e 1 0 ]
+"88
+[v _valor_equivalente valor_equivalente `(v  1 e 1 0 ]
+"176
+[v _main main `(v  1 e 1 0 ]
+"257
+[v _isr isr `IIH(v  1 e 1 0 ]
+[s S33 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"315 C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4520.h
+[s S42 . 1 `uc 1 INT0 1 0 :1:0 
+`uc 1 INT1 1 0 :1:1 
+`uc 1 INT2 1 0 :1:2 
+`uc 1 CCP2 1 0 :1:3 
+`uc 1 KBI0 1 0 :1:4 
+`uc 1 KBI1 1 0 :1:5 
+`uc 1 KBI2 1 0 :1:6 
+`uc 1 KBI3 1 0 :1:7 
+]
+[s S51 . 1 `uc 1 AN12 1 0 :1:0 
+`uc 1 AN10 1 0 :1:1 
+`uc 1 AN8 1 0 :1:2 
+`uc 1 AN9 1 0 :1:3 
+`uc 1 AN11 1 0 :1:4 
+`uc 1 PGM 1 0 :1:5 
+`uc 1 PGC 1 0 :1:6 
+`uc 1 PGD 1 0 :1:7 
+]
+[s S60 . 1 `uc 1 FLT0 1 0 :1:0 
+]
+[s S62 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 CCP2_PA2 1 0 :1:3 
+]
+[u S65 . 1 `S33 1 . 1 0 `S42 1 . 1 0 `S51 1 . 1 0 `S60 1 . 1 0 `S62 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES65  1 e 1 @3969 ]
+[s S391 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 RC3 1 0 :1:3 
+`uc 1 RC4 1 0 :1:4 
+`uc 1 RC5 1 0 :1:5 
+`uc 1 RC6 1 0 :1:6 
+`uc 1 RC7 1 0 :1:7 
+]
+"497
+[s S400 . 1 `uc 1 T1OSO 1 0 :1:0 
+`uc 1 T1OSI 1 0 :1:1 
+`uc 1 CCP1 1 0 :1:2 
+`uc 1 SCK 1 0 :1:3 
+`uc 1 SDI 1 0 :1:4 
+`uc 1 SDO 1 0 :1:5 
+`uc 1 TX 1 0 :1:6 
+`uc 1 RX 1 0 :1:7 
+]
+[s S409 . 1 `uc 1 T13CKI 1 0 :1:0 
+`uc 1 CCP2 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 SCL 1 0 :1:3 
+`uc 1 SDA 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 CK 1 0 :1:6 
+`uc 1 DT 1 0 :1:7 
+]
+[s S418 . 1 `uc 1 T1CKI 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 P1A 1 0 :1:2 
+]
+[s S422 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 PA2 1 0 :1:1 
+`uc 1 PA1 1 0 :1:2 
+]
+[u S426 . 1 `S391 1 . 1 0 `S400 1 . 1 0 `S409 1 . 1 0 `S418 1 . 1 0 `S422 1 . 1 0 ]
+[v _PORTCbits PORTCbits `VES426  1 e 1 @3970 ]
+"632
+[v _PORTD PORTD `VEuc  1 e 1 @3971 ]
+"1699
+[v _TRISB TRISB `VEuc  1 e 1 @3987 ]
+"1921
+[v _TRISC TRISC `VEuc  1 e 1 @3988 ]
+"2143
+[v _TRISD TRISD `VEuc  1 e 1 @3989 ]
+"3110
+[v _RCSTA RCSTA `VEuc  1 e 1 @4011 ]
+"3320
+[v _TXSTA TXSTA `VEuc  1 e 1 @4012 ]
+"3576
+[v _TXREG TXREG `VEuc  1 e 1 @4013 ]
+"3588
+[v _RCREG RCREG `VEuc  1 e 1 @4014 ]
+"3600
+[v _SPBRG SPBRG `VEuc  1 e 1 @4015 ]
+"4690
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @4033 ]
+"5530
+[v _T1CON T1CON `VEuc  1 e 1 @4045 ]
+[s S149 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_T1SYNC 1 0 :1:2 
+]
+"5563
+[s S152 . 1 `uc 1 TMR1ON 1 0 :1:0 
+`uc 1 TMR1CS 1 0 :1:1 
+`uc 1 nT1SYNC 1 0 :1:2 
+`uc 1 T1OSCEN 1 0 :1:3 
+`uc 1 T1CKPS 1 0 :2:4 
+`uc 1 T1RUN 1 0 :1:6 
+`uc 1 RD16 1 0 :1:7 
+]
+[s S160 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T1SYNC 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 T1CKPS0 1 0 :1:4 
+`uc 1 T1CKPS1 1 0 :1:5 
+]
+[s S166 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 SOSCEN 1 0 :1:3 
+`uc 1 . 1 0 :3:4 
+`uc 1 T1RD16 1 0 :1:7 
+]
+[u S171 . 1 `S149 1 . 1 0 `S152 1 . 1 0 `S160 1 . 1 0 `S166 1 . 1 0 ]
+[v _T1CONbits T1CONbits `VES171  1 e 1 @4045 ]
+"5640
+[v _TMR1L TMR1L `VEuc  1 e 1 @4046 ]
+"5647
+[v _TMR1H TMR1H `VEuc  1 e 1 @4047 ]
+[s S324 . 1 `uc 1 NOT_BOR 1 0 :1:0 
+]
+"5697
+[s S326 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 NOT_POR 1 0 :1:1 
+]
+[s S329 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_PD 1 0 :1:2 
+]
+[s S332 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 NOT_TO 1 0 :1:3 
+]
+[s S335 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 NOT_RI 1 0 :1:4 
+]
+[s S338 . 1 `uc 1 nBOR 1 0 :1:0 
+`uc 1 nPOR 1 0 :1:1 
+`uc 1 nPD 1 0 :1:2 
+`uc 1 nTO 1 0 :1:3 
+`uc 1 nRI 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 SBOREN 1 0 :1:6 
+`uc 1 IPEN 1 0 :1:7 
+]
+[s S347 . 1 `uc 1 BOR 1 0 :1:0 
+`uc 1 POR 1 0 :1:1 
+`uc 1 PD 1 0 :1:2 
+`uc 1 TO 1 0 :1:3 
+`uc 1 RI 1 0 :1:4 
+]
+[u S353 . 1 `S324 1 . 1 0 `S326 1 . 1 0 `S329 1 . 1 0 `S332 1 . 1 0 `S335 1 . 1 0 `S338 1 . 1 0 `S347 1 . 1 0 ]
+[v _RCONbits RCONbits `VES353  1 e 1 @4048 ]
+[s S115 . 1 `uc 1 T0PS 1 0 :3:0 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+`uc 1 T08BIT 1 0 :1:6 
+`uc 1 TMR0ON 1 0 :1:7 
+]
+"6191
+[s S122 . 1 `uc 1 T0PS0 1 0 :1:0 
+`uc 1 T0PS1 1 0 :1:1 
+`uc 1 T0PS2 1 0 :1:2 
+`uc 1 T0PS3 1 0 :1:3 
+`uc 1 . 1 0 :2:4 
+`uc 1 T016BIT 1 0 :1:6 
+]
+[u S129 . 1 `S115 1 . 1 0 `S122 1 . 1 0 ]
+[v _T0CONbits T0CONbits `VES129  1 e 1 @4053 ]
+"6258
+[v _TMR0L TMR0L `VEuc  1 e 1 @4054 ]
+"6265
+[v _TMR0H TMR0H `VEuc  1 e 1 @4055 ]
+[s S284 . 1 `uc 1 INT1IF 1 0 :1:0 
+`uc 1 INT2IF 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 INT1IE 1 0 :1:3 
+`uc 1 INT2IE 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 INT1IP 1 0 :1:6 
+`uc 1 INT2IP 1 0 :1:7 
+]
+"6557
+[s S293 . 1 `uc 1 INT1F 1 0 :1:0 
+`uc 1 INT2F 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 INT1E 1 0 :1:3 
+`uc 1 INT2E 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 INT1P 1 0 :1:6 
+`uc 1 INT2P 1 0 :1:7 
+]
+[u S302 . 1 `S284 1 . 1 0 `S293 1 . 1 0 ]
+[v _INTCON3bits INTCON3bits `VES302  1 e 1 @4080 ]
+[s S249 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 NOT_RBPU 1 0 :1:7 
+]
+"6647
+[s S252 . 1 `uc 1 RBIP 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 TMR0IP 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 INTEDG2 1 0 :1:4 
+`uc 1 INTEDG1 1 0 :1:5 
+`uc 1 INTEDG0 1 0 :1:6 
+`uc 1 nRBPU 1 0 :1:7 
+]
+[s S261 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 RBPU 1 0 :1:7 
+]
+[u S264 . 1 `S249 1 . 1 0 `S252 1 . 1 0 `S261 1 . 1 0 ]
+[v _INTCON2bits INTCON2bits `VES264  1 e 1 @4081 ]
+[s S200 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INT0IF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INT0IE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE_GIEL 1 0 :1:6 
+`uc 1 GIE_GIEH 1 0 :1:7 
+]
+"6724
+[s S209 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 INT0F 1 0 :1:1 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 INT0E 1 0 :1:4 
+`uc 1 T0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+[s S218 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 GIEL 1 0 :1:6 
+`uc 1 GIEH 1 0 :1:7 
+]
+[u S222 . 1 `S200 1 . 1 0 `S209 1 . 1 0 `S218 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES222  1 e 1 @4082 ]
+"8176
+[v _RCIF RCIF `VEb  1 e 0 @31989 ]
+"8518
+[v _TMR1ON TMR1ON `VEb  1 e 0 @32360 ]
+"8668
+[v _TRMT TRMT `VEb  1 e 0 @32097 ]
+"55 D:\MPLAB\pic\sources\c99\common\doprnt.c
+[v _flags flags `i  1 s 2 flags ]
+[v _prec prec `i  1 s 2 prec ]
+[v _width width `i  1 s 2 width ]
+"66
+[v _dbuf dbuf `[32]uc  1 s 32 dbuf ]
+"69
+[v _nout nout `i  1 s 2 nout ]
+"21 C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+[v _valorAMos valorAMos `i  1 e 2 0 ]
+"22
+[v _valor_display valor_display `i  1 e 2 0 ]
+"23
+[v _indice indice `i  1 e 2 0 ]
+"24
+[v _medindo medindo `i  1 e 2 0 ]
+"25
+[v _tempo_echo tempo_echo `ul  1 e 4 0 ]
+"26
+[v _dig_val dig_val `i  1 e 2 0 ]
+"27
+[v _valor_tara valor_tara `i  1 e 2 0 ]
+"28
+[v _flag_MEDIR flag_MEDIR `s  1 e 2 0 ]
+"29
+[v _flag_TARA flag_TARA `s  1 e 2 0 ]
+"30
+[v _flag_MENSURAR flag_MENSURAR `s  1 e 2 0 ]
+"31
+[v _valX valX `i  1 e 2 0 ]
+[v _valY valY `i  1 e 2 0 ]
+[v _valZ valZ `i  1 e 2 0 ]
+"176
+[v _main main `(v  1 e 1 0 ]
+{
+"228
+[v main@str str `[8]uc  1 a 8 93 ]
+"255
+} 0
+"3 D:\MPLAB\pic\sources\c99\common\strcat.c
+[v _strcat strcat `(*.39uc  1 e 2 0 ]
+{
+[v strcat@dest dest `*.39uc  1 p 2 55 ]
+[v strcat@src src `*.31Cuc  1 p 1 57 ]
+"7
+} 0
+"3 D:\MPLAB\pic\sources\c99\common\strcpy.c
+[v _strcpy strcpy `(*.39uc  1 e 2 0 ]
+{
+"6
+[v strcpy@d d `*.39uc  1 a 2 52 ]
+"5
+[v strcpy@s s `*.31Cuc  1 a 1 54 ]
+"3
+[v strcpy@dest dest `*.39uc  1 p 2 48 ]
+[v strcpy@src src `*.31Cuc  1 p 1 50 ]
+"9
+} 0
+"9 D:\MPLAB\pic\sources\c99\common\nf_sprintf.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+{
+[u S1039 . 3 `*.2uc 1 buffer 3 0 `*.2Cuc 1 source 3 0 ]
+"13
+[s S1042 _IO_FILE 11 `S1039 1 . 3 0 `i 1 count 2 3 `[2]uc 1 ungetbuf 2 5 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
+[v sprintf@f f `S1042  1 a 11 81 ]
+"12
+[v sprintf@ap ap `[1]*.39v  1 a 2 79 ]
+"9
+[v sprintf@s s `*.39uc  1 p 2 74 ]
+[v sprintf@fmt fmt `*.31Cuc  1 p 1 76 ]
+"23
+} 0
+"1390 D:\MPLAB\pic\sources\c99\common\doprnt.c
+[v _vfprintf vfprintf `(i  1 e 2 0 ]
+{
+"1393
+[v vfprintf@cfmt cfmt `*.31uc  1 a 1 73 ]
+[s S1074 _IO_FILE 0 ]
+"1390
+[v vfprintf@fp fp `*.39S1074  1 p 2 68 ]
+[v vfprintf@fmt fmt `*.31Cuc  1 p 1 70 ]
+[v vfprintf@ap ap `*.39*.39v  1 p 2 71 ]
+"1404
+} 0
+"692
+[v _vfpfcnvrt vfpfcnvrt `(i  1 s 2 vfpfcnvrt ]
+{
+"696
+[v vfpfcnvrt@ll ll `o  1 a 8 60 ]
+[s S1074 _IO_FILE 0 ]
+"692
+[v vfpfcnvrt@fp fp `*.39S1074  1 p 2 52 ]
+[v vfpfcnvrt@fmt fmt `*.39*.31uc  1 p 2 54 ]
+[v vfpfcnvrt@ap ap `*.39*.39v  1 p 2 56 ]
+"1387
+} 0
+"287
+[v _dtoa dtoa `(i  1 s 2 dtoa ]
+{
+"290
+[v dtoa@n n `o  1 a 8 42 ]
+"289
+[v dtoa@i i `i  1 a 2 50 ]
+[v dtoa@s s `i  1 a 2 40 ]
+[v dtoa@w w `i  1 a 2 38 ]
+[v dtoa@p p `i  1 a 2 36 ]
+[s S1074 _IO_FILE 0 ]
+"287
+[v dtoa@fp fp `*.39S1074  1 p 2 16 ]
+[v dtoa@d d `o  1 p 8 18 ]
+"328
+} 0
+"72
+[v _pad pad `(i  1 s 2 pad ]
+{
+"74
+[v pad@w w `i  1 a 2 11 ]
+[v pad@i i `i  1 a 2 9 ]
+[s S1074 _IO_FILE 0 ]
+"72
+[v pad@fp fp `*.39S1074  1 p 2 3 ]
+[v pad@buf buf `*.39uc  1 p 2 5 ]
+[v pad@p p `i  1 p 2 7 ]
+"95
+} 0
+"5 D:\MPLAB\pic\sources\c99\common\strlen.c
+[v _strlen strlen `(ui  1 e 2 0 ]
+{
+"7
+[v strlen@a a `*.39Cuc  1 a 2 46 ]
+"5
+[v strlen@s s `*.39Cuc  1 p 2 44 ]
+"12
+} 0
+"8 D:\MPLAB\pic\sources\c99\common\nf_fputs.c
+[v _fputs fputs `(i  1 e 2 0 ]
+{
+"11
+[v fputs@i i `i  1 a 2 1 ]
+"10
+[v fputs@c c `uc  1 a 1 0 ]
+"8
+[v fputs@s s `*.39Cuc  1 p 2 53 ]
+[u S1039 . 3 `*.2uc 1 buffer 3 0 `*.2Cuc 1 source 3 0 ]
+[s S1042 _IO_FILE 11 `S1039 1 . 3 0 `i 1 count 2 3 `[2]uc 1 ungetbuf 2 5 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
+[v fputs@fp fp `*.39S1042  1 p 2 55 ]
+"19
+} 0
+"8 D:\MPLAB\pic\sources\c99\common\nf_fputc.c
+[v _fputc fputc `(i  1 e 2 0 ]
+{
+[v fputc@c c `i  1 p 2 44 ]
+[u S1039 . 3 `*.2uc 1 buffer 3 0 `*.2Cuc 1 source 3 0 ]
+[s S1042 _IO_FILE 11 `S1039 1 . 3 0 `i 1 count 2 3 `[2]uc 1 ungetbuf 2 5 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
+[v fputc@fp fp `*.39S1042  1 p 2 46 ]
+"24
+} 0
+"7 D:\MPLAB\pic\sources\c99\common\putch.c
+[v _putch putch `(v  1 e 1 0 ]
+{
+"9
+} 0
+"1 D:\MPLAB\pic\sources\c99\common\abs.c
+[v _abs abs `(i  1 e 2 0 ]
+{
+[v abs@a a `i  1 p 2 46 ]
+"4
+} 0
+"9 D:\MPLAB\pic\sources\c99\common\aomod.c
+[v ___aomod __aomod `(o  1 e 8 0 ]
+{
+"12
+[v ___aomod@sign sign `uc  1 a 1 45 ]
+[v ___aomod@counter counter `uc  1 a 1 44 ]
+"9
+[v ___aomod@dividend dividend `o  1 p 8 0 ]
+[v ___aomod@divisor divisor `o  1 p 8 8 ]
+"36
+} 0
+"9 D:\MPLAB\pic\sources\c99\common\aodiv.c
+[v ___aodiv __aodiv `(o  1 e 8 0 ]
+{
+"12
+[v ___aodiv@quotient quotient `o  1 a 8 46 ]
+"13
+[v ___aodiv@sign sign `uc  1 a 1 45 ]
+[v ___aodiv@counter counter `uc  1 a 1 44 ]
+"9
+[v ___aodiv@dividend dividend `o  1 p 8 0 ]
+[v ___aodiv@divisor divisor `o  1 p 8 8 ]
+"43
+} 0
+"81 C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+[v _UART_Print UART_Print `(v  1 e 1 0 ]
+{
+"83
+[v UART_Print@i i `um  1 a 3 47 ]
+"81
+[v UART_Print@data data `*.39Cuc  1 p 2 45 ]
+"86
+} 0
+"75
+[v _UART_PutC UART_PutC `(v  1 e 1 0 ]
+{
+[v UART_PutC@data data `Cuc  1 a 1 wreg ]
+[v UART_PutC@data data `Cuc  1 a 1 wreg ]
+[v UART_PutC@data data `Cuc  1 a 1 44 ]
+"79
+} 0
+"33
+[v _UART_Init UART_Init `(v  1 e 1 0 ]
+{
+"35
+[v UART_Init@n n `m  1 a 3 7 ]
+"33
+[v UART_Init@baud_rate baud_rate `Cum  1 p 3 0 ]
+"57
+} 0
+"7 D:\MPLAB\pic\sources\c99\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+{
+"10
+[v ___aldiv@quotient quotient `l  1 a 4 54 ]
+"11
+[v ___aldiv@sign sign `uc  1 a 1 53 ]
+[v ___aldiv@counter counter `uc  1 a 1 52 ]
+"7
+[v ___aldiv@dividend dividend `l  1 p 4 44 ]
+[v ___aldiv@divisor divisor `l  1 p 4 48 ]
+"41
+} 0
+"257 C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+[v _isr isr `IIH(v  1 e 1 0 ]
+{
+"301
+[v isr@str_598 str `[20]uc  1 a 20 20 ]
+"295
+[v isr@str str `[20]uc  1 a 20 0 ]
+"361
+} 0
+"3 D:\MPLAB\pic\sources\c99\common\strcat.c
+[v i2_strcat strcat `(*.39uc  1 e 2 0 ]
+{
+[v i2strcat@dest dest `*.39uc  1 p 2 11 ]
+[v i2strcat@src src `*.31Cuc  1 p 1 13 ]
+"7
+} 0
+"3 D:\MPLAB\pic\sources\c99\common\strcpy.c
+[v i2_strcpy strcpy `(*.39uc  1 e 2 0 ]
+{
+"6
+[v i2strcpy@d d `*.39uc  1 a 2 8 ]
+"5
+[v i2strcpy@s s `*.31Cuc  1 a 1 10 ]
+"3
+[v i2strcpy@dest dest `*.39uc  1 p 2 4 ]
+[v i2strcpy@src src `*.31Cuc  1 p 1 6 ]
+"9
+} 0
+"9 D:\MPLAB\pic\sources\c99\common\nf_sprintf.c
+[v i2_sprintf sprintf `(i  1 e 2 0 ]
+{
+[u S1039 . 3 `*.2uc 1 buffer 3 0 `*.2Cuc 1 source 3 0 ]
+"13
+[s S1042 _IO_FILE 11 `S1039 1 . 3 0 `i 1 count 2 3 `[2]uc 1 ungetbuf 2 5 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
+[v i2sprintf@f f `S1042  1 a 11 92 ]
+"12
+[v i2sprintf@ap ap `[1]*.39v  1 a 2 90 ]
+"9
+[v i2sprintf@s s `*.39uc  1 p 2 85 ]
+[v i2sprintf@fmt fmt `*.31Cuc  1 p 1 87 ]
+"23
+} 0
+"1390 D:\MPLAB\pic\sources\c99\common\doprnt.c
+[v i2_vfprintf vfprintf `(i  1 e 2 0 ]
+{
+"1393
+[v i2vfprintf@cfmt cfmt `*.31uc  1 a 1 84 ]
+[s S1074 _IO_FILE 0 ]
+"1390
+[v i2vfprintf@fp fp `*.39S1074  1 p 2 79 ]
+[v i2vfprintf@fmt fmt `*.31Cuc  1 p 1 81 ]
+[v i2vfprintf@ap ap `*.39*.39v  1 p 2 82 ]
+"1404
+} 0
+"692
+[v i2_vfpfcnvrt vfpfcnvrt `(i  1 s 2 i2_vfpfcnvrt ]
+{
+"696
+[v i2vfpfcnvrt@ll ll `o  1 a 8 71 ]
+[s S1074 _IO_FILE 0 ]
+"692
+[v i2vfpfcnvrt@fp fp `*.39S1074  1 p 2 63 ]
+[v i2vfpfcnvrt@fmt fmt `*.39*.31uc  1 p 2 65 ]
+[v i2vfpfcnvrt@ap ap `*.39*.39v  1 p 2 67 ]
+"1387
+} 0
+"287
+[v i2_dtoa dtoa `(i  1 s 2 i2_dtoa ]
+{
+"290
+[v i2dtoa@n n `o  1 a 8 53 ]
+"289
+[v i2dtoa@i i `i  1 a 2 61 ]
+[v i2dtoa@s s `i  1 a 2 51 ]
+[v i2dtoa@w w `i  1 a 2 49 ]
+[v i2dtoa@p p `i  1 a 2 47 ]
+[s S1074 _IO_FILE 0 ]
+"287
+[v i2dtoa@fp fp `*.39S1074  1 p 2 27 ]
+[v i2dtoa@d d `o  1 p 8 29 ]
+"328
+} 0
+"72
+[v i2_pad pad `(i  1 s 2 i2_pad ]
+{
+"74
+[v i2pad@w w `i  1 a 2 25 ]
+[v i2pad@i i `i  1 a 2 23 ]
+[s S1074 _IO_FILE 0 ]
+"72
+[v i2pad@fp fp `*.39S1074  1 p 2 16 ]
+[v i2pad@buf buf `*.39uc  1 p 2 18 ]
+[v i2pad@p p `i  1 p 2 20 ]
+"95
+} 0
+"5 D:\MPLAB\pic\sources\c99\common\strlen.c
+[v i2_strlen strlen `(ui  1 e 2 0 ]
+{
+"7
+[v i2strlen@a a `*.39Cuc  1 a 2 2 ]
+"5
+[v i2strlen@s s `*.39Cuc  1 p 2 0 ]
+"12
+} 0
+"8 D:\MPLAB\pic\sources\c99\common\nf_fputs.c
+[v i2_fputs fputs `(i  1 e 2 0 ]
+{
+"11
+[v i2fputs@i i `i  1 a 2 14 ]
+"10
+[v i2fputs@c c `uc  1 a 1 13 ]
+"8
+[v i2fputs@s s `*.39Cuc  1 p 2 9 ]
+[u S1039 . 3 `*.2uc 1 buffer 3 0 `*.2Cuc 1 source 3 0 ]
+[s S1042 _IO_FILE 11 `S1039 1 . 3 0 `i 1 count 2 3 `[2]uc 1 ungetbuf 2 5 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
+[v i2fputs@fp fp `*.39S1042  1 p 2 11 ]
+"19
+} 0
+"8 D:\MPLAB\pic\sources\c99\common\nf_fputc.c
+[v i2_fputc fputc `(i  1 e 2 0 ]
+{
+[v i2fputc@c c `i  1 p 2 0 ]
+[u S1039 . 3 `*.2uc 1 buffer 3 0 `*.2Cuc 1 source 3 0 ]
+[s S1042 _IO_FILE 11 `S1039 1 . 3 0 `i 1 count 2 3 `[2]uc 1 ungetbuf 2 5 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
+[v i2fputc@fp fp `*.39S1042  1 p 2 2 ]
+"24
+} 0
+"7 D:\MPLAB\pic\sources\c99\common\putch.c
+[v i2_putch putch `(v  1 e 1 0 ]
+{
+"9
+} 0
+"1 D:\MPLAB\pic\sources\c99\common\abs.c
+[v i2_abs abs `(i  1 e 2 0 ]
+{
+[v i2abs@a a `i  1 p 2 18 ]
+"4
+} 0
+"9 D:\MPLAB\pic\sources\c99\common\aomod.c
+[v i2___aomod __aomod `(o  1 e 8 0 ]
+{
+"12
+[v i2___aomod@sign sign `uc  1 a 1 17 ]
+[v i2___aomod@counter counter `uc  1 a 1 16 ]
+"9
+[v i2___aomod@dividend dividend `o  1 p 8 0 ]
+[v i2___aomod@divisor divisor `o  1 p 8 8 ]
+"36
+} 0
+"9 D:\MPLAB\pic\sources\c99\common\aodiv.c
+[v i2___aodiv __aodiv `(o  1 e 8 0 ]
+{
+"12
+[v i2___aodiv@quotient quotient `o  1 a 8 18 ]
+"13
+[v i2___aodiv@sign sign `uc  1 a 1 17 ]
+[v i2___aodiv@counter counter `uc  1 a 1 16 ]
+"9
+[v i2___aodiv@dividend dividend `o  1 p 8 0 ]
+[v i2___aodiv@divisor divisor `o  1 p 8 8 ]
+"43
+} 0
+"81 C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+[v i2_UART_Print UART_Print `(v  1 e 1 0 ]
+{
+"83
+[v i2UART_Print@i i `um  1 a 3 3 ]
+"81
+[v i2UART_Print@data data `*.39Cuc  1 p 2 1 ]
+"86
+} 0
+"75
+[v i2_UART_PutC UART_PutC `(v  1 e 1 0 ]
+{
+[v i2UART_PutC@data data `Cuc  1 a 1 wreg ]
+[v i2UART_PutC@data data `Cuc  1 a 1 wreg ]
+[v i2UART_PutC@data data `Cuc  1 a 1 0 ]
+"79
+} 0
+"88
+[v _valor_equivalente valor_equivalente `(v  1 e 1 0 ]
+{
+"89
+[v valor_equivalente@correspondencia correspondencia `uc  1 a 1 6 ]
+"88
+[v valor_equivalente@dig dig `i  1 p 2 0 ]
+[v valor_equivalente@val val `i  1 p 2 2 ]
+"173
+} 0
+"15 D:\MPLAB\pic\sources\c99\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 4 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 0 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
+"53
+} 0
+"7 D:\MPLAB\pic\sources\c99\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+{
+"10
+[v ___awmod@sign sign `uc  1 a 1 5 ]
+[v ___awmod@counter counter `uc  1 a 1 4 ]
+"7
+[v ___awmod@dividend dividend `i  1 p 2 0 ]
+[v ___awmod@divisor divisor `i  1 p 2 2 ]
+"34
+} 0
+"7 D:\MPLAB\pic\sources\c99\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"10
+[v ___awdiv@quotient quotient `i  1 a 2 12 ]
+"11
+[v ___awdiv@sign sign `uc  1 a 1 11 ]
+[v ___awdiv@counter counter `uc  1 a 1 10 ]
+"7
+[v ___awdiv@dividend dividend `i  1 p 2 6 ]
+[v ___awdiv@divisor divisor `i  1 p 2 8 ]
+"41
+} 0

@@ -1,0 +1,1374 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$dist/default/production\pwm.X.production.o
+cinit CODE 0 2166 2166 26 1 2
+idloc IDLOC 5 200000 200000 8 1 1
+intcode_body CODE 0 608 608 3E6 1 2
+text0 CODE 0 1422 1422 144 1 2
+text1 CODE 0 21B2 21B2 22 1 2
+text2 CODE 0 2040 2040 34 1 2
+text3 CODE 0 1EB2 1EB2 4A 1 2
+text4 CODE 0 1E64 1E64 4E 1 2
+text5 CODE 0 E90 E90 176 1 2
+text6 CODE 0 9EE 9EE 25C 1 2
+text7 CODE 0 1A9A 1A9A AC 1 2
+text8 CODE 0 210E 210E 2E 1 2
+text9 CODE 0 1EFC 1EFC 46 1 2
+text10 CODE 0 1B46 1B46 A0 1 2
+text11 CODE 0 220E 220E 2 1 2
+text12 CODE 0 2074 2074 34 1 2
+text13 CODE 0 1566 1566 13A 1 2
+text14 CODE 0 1174 1174 166 1 2
+text15 CODE 0 1F86 1F86 42 1 2
+text16 CODE 0 21F6 21F6 C 1 2
+text17 CODE 0 16A0 16A0 12A 1 2
+text18 CODE 0 19CE 19CE CC 1 2
+text20 CODE 0 21D4 21D4 22 1 2
+text21 CODE 0 20A8 20A8 34 1 2
+text22 CODE 0 1F42 1F42 44 1 2
+text23 CODE 0 1E14 1E14 50 1 2
+text24 CODE 0 1006 1006 16E 1 2
+text25 CODE 0 C4A C4A 246 1 2
+text26 CODE 0 1C86 1C86 9A 1 2
+text27 CODE 0 213C 213C 2A 1 2
+text28 CODE 0 2008 2008 38 1 2
+text29 CODE 0 1BE6 1BE6 A0 1 2
+text30 CODE 0 2210 2210 2 1 2
+text31 CODE 0 20DC 20DC 32 1 2
+text32 CODE 0 17CA 17CA 124 1 2
+text33 CODE 0 12DA 12DA 148 1 2
+text34 CODE 0 1FC8 1FC8 40 1 2
+text35 CODE 0 2202 2202 C 1 2
+text36 CODE 0 18EE 18EE E0 1 2
+text37 CODE 0 218C 218C 26 1 2
+text38 CODE 0 1DA4 1DA4 70 1 2
+text39 CODE 0 1D20 1D20 84 1 2
+cstackCOMRAM COMRAM 1 1 1 75 1 1
+cstackBANK0 BANK0 1 80 80 3A 1 1
+cstackBANK1 BANK1 1 100 100 65 1 1
+temp COMRAM 1 76 76 1 1 1
+bssBANK0 BANK0 1 BA BA 1A 1 1
+bssBANK1 BANK1 1 165 165 2A 1 1
+intcode CODE 0 8 8 6 1 2
+smallconst SMALLCONST 0 600 600 8 1 2
+config CONFIG 4 300000 300000 E 1 1
+$C:\Users\vitor\AppData\Local\Temp\xcAs6mg.o
+idloc IDLOC 5 200000 200000 8 1 1
+init CODE 0 E E 4 1 2
+reset_vec CODE 0 0 0 4 1 2
+config CONFIG 4 300000 300000 E 1 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM D4-FF 1
+RAM 18F-5FF 1
+SFR F80-FFF 1
+BANK0 D4-FF 1
+BANK1 18F-1FF 1
+BANK2 200-2FF 1
+BANK3 300-3FF 1
+BANK4 400-4FF 1
+BANK5 500-5FF 1
+CONST 4-7 1
+CONST 12-5FF 1
+CONST 2212-6FFF 1
+SMALLCONST 2212-6FFF 1
+CODE 4-7 1
+CODE 12-5FF 1
+CODE 2212-6FFF 1
+BIGRAM 77-7F 1
+BIGRAM D4-FF 1
+BIGRAM 18F-5FF 1
+BIGSFR F80-FFF 1
+COMRAM 77-7F 1
+EEDATA F00000-F000FF 1
+MEDIUMCONST 2212-6FFF 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\pwm.X.production.o
+8 intcode CODE >5477:C:\Users\vitor\AppData\Local\Temp\xcAs6mg.s
+8 intcode CODE >257:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+1D20 text39 CODE >7:D:\MPLAB\pic\sources\c99\common\awdiv.c
+1D20 text39 CODE >13:D:\MPLAB\pic\sources\c99\common\awdiv.c
+1D24 text39 CODE >14:D:\MPLAB\pic\sources\c99\common\awdiv.c
+1D28 text39 CODE >15:D:\MPLAB\pic\sources\c99\common\awdiv.c
+1D30 text39 CODE >16:D:\MPLAB\pic\sources\c99\common\awdiv.c
+1D34 text39 CODE >18:D:\MPLAB\pic\sources\c99\common\awdiv.c
+1D38 text39 CODE >19:D:\MPLAB\pic\sources\c99\common\awdiv.c
+1D40 text39 CODE >20:D:\MPLAB\pic\sources\c99\common\awdiv.c
+1D44 text39 CODE >22:D:\MPLAB\pic\sources\c99\common\awdiv.c
+1D4C text39 CODE >23:D:\MPLAB\pic\sources\c99\common\awdiv.c
+1D54 text39 CODE >24:D:\MPLAB\pic\sources\c99\common\awdiv.c
+1D58 text39 CODE >25:D:\MPLAB\pic\sources\c99\common\awdiv.c
+1D5A text39 CODE >26:D:\MPLAB\pic\sources\c99\common\awdiv.c
+1D60 text39 CODE >27:D:\MPLAB\pic\sources\c99\common\awdiv.c
+1D62 text39 CODE >25:D:\MPLAB\pic\sources\c99\common\awdiv.c
+1D66 text39 CODE >30:D:\MPLAB\pic\sources\c99\common\awdiv.c
+1D6C text39 CODE >31:D:\MPLAB\pic\sources\c99\common\awdiv.c
+1D78 text39 CODE >32:D:\MPLAB\pic\sources\c99\common\awdiv.c
+1D80 text39 CODE >33:D:\MPLAB\pic\sources\c99\common\awdiv.c
+1D82 text39 CODE >35:D:\MPLAB\pic\sources\c99\common\awdiv.c
+1D88 text39 CODE >36:D:\MPLAB\pic\sources\c99\common\awdiv.c
+1D8C text39 CODE >38:D:\MPLAB\pic\sources\c99\common\awdiv.c
+1D92 text39 CODE >39:D:\MPLAB\pic\sources\c99\common\awdiv.c
+1D9A text39 CODE >40:D:\MPLAB\pic\sources\c99\common\awdiv.c
+1DA2 text39 CODE >41:D:\MPLAB\pic\sources\c99\common\awdiv.c
+1DA4 text38 CODE >7:D:\MPLAB\pic\sources\c99\common\awmod.c
+1DA4 text38 CODE >12:D:\MPLAB\pic\sources\c99\common\awmod.c
+1DA8 text38 CODE >13:D:\MPLAB\pic\sources\c99\common\awmod.c
+1DAC text38 CODE >14:D:\MPLAB\pic\sources\c99\common\awmod.c
+1DB4 text38 CODE >15:D:\MPLAB\pic\sources\c99\common\awmod.c
+1DB8 text38 CODE >17:D:\MPLAB\pic\sources\c99\common\awmod.c
+1DBC text38 CODE >18:D:\MPLAB\pic\sources\c99\common\awmod.c
+1DC4 text38 CODE >19:D:\MPLAB\pic\sources\c99\common\awmod.c
+1DCC text38 CODE >20:D:\MPLAB\pic\sources\c99\common\awmod.c
+1DD0 text38 CODE >21:D:\MPLAB\pic\sources\c99\common\awmod.c
+1DD2 text38 CODE >22:D:\MPLAB\pic\sources\c99\common\awmod.c
+1DD8 text38 CODE >23:D:\MPLAB\pic\sources\c99\common\awmod.c
+1DDA text38 CODE >21:D:\MPLAB\pic\sources\c99\common\awmod.c
+1DDE text38 CODE >26:D:\MPLAB\pic\sources\c99\common\awmod.c
+1DEA text38 CODE >27:D:\MPLAB\pic\sources\c99\common\awmod.c
+1DF2 text38 CODE >28:D:\MPLAB\pic\sources\c99\common\awmod.c
+1DF8 text38 CODE >29:D:\MPLAB\pic\sources\c99\common\awmod.c
+1DFC text38 CODE >31:D:\MPLAB\pic\sources\c99\common\awmod.c
+1E02 text38 CODE >32:D:\MPLAB\pic\sources\c99\common\awmod.c
+1E0A text38 CODE >33:D:\MPLAB\pic\sources\c99\common\awmod.c
+1E12 text38 CODE >34:D:\MPLAB\pic\sources\c99\common\awmod.c
+218C text37 CODE >15:D:\MPLAB\pic\sources\c99\common\Umul16.c
+218C text37 CODE >37:D:\MPLAB\pic\sources\c99\common\Umul16.c
+2198 text37 CODE >38:D:\MPLAB\pic\sources\c99\common\Umul16.c
+21A0 text37 CODE >39:D:\MPLAB\pic\sources\c99\common\Umul16.c
+21A8 text37 CODE >52:D:\MPLAB\pic\sources\c99\common\Umul16.c
+21B0 text37 CODE >53:D:\MPLAB\pic\sources\c99\common\Umul16.c
+18EE text36 CODE >88:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+18EE text36 CODE >90:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+18F0 text36 CODE >92:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+18F4 text36 CODE >96:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+18F8 text36 CODE >100:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+18FC text36 CODE >104:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+1900 text36 CODE >108:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+1904 text36 CODE >112:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+1908 text36 CODE >116:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+190C text36 CODE >120:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+1910 text36 CODE >124:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+1914 text36 CODE >128:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+1918 text36 CODE >129:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+191A text36 CODE >133:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+1926 text36 CODE >133:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+192E text36 CODE >133:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+1934 text36 CODE >133:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+193A text36 CODE >133:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+1940 text36 CODE >133:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+1946 text36 CODE >133:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+194C text36 CODE >133:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+1952 text36 CODE >133:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+1958 text36 CODE >133:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+195E text36 CODE >133:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+1964 text36 CODE >133:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+196A text36 CODE >135:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+196A text36 CODE >136:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+196C text36 CODE >137:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+196E text36 CODE >138:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+1970 text36 CODE >139:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+1972 text36 CODE >140:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+1976 text36 CODE >141:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+1986 text36 CODE >142:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+1988 text36 CODE >144:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+1988 text36 CODE >145:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+198A text36 CODE >146:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+198C text36 CODE >147:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+1990 text36 CODE >153:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+1990 text36 CODE >154:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+1992 text36 CODE >155:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+1996 text36 CODE >157:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+199A text36 CODE >161:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+199A text36 CODE >162:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+199C text36 CODE >163:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+199E text36 CODE >164:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+19A2 text36 CODE >171:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+19AE text36 CODE >171:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+19B6 text36 CODE >171:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+19BC text36 CODE >171:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+19C2 text36 CODE >171:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+19C8 text36 CODE >171:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+2202 text35 CODE >75:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+2204 text35 CODE >77:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+2208 text35 CODE >78:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+220C text35 CODE >79:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+1FC8 text34 CODE >81:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+1FC8 text34 CODE >83:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+1FD4 text34 CODE >84:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+1FD6 text34 CODE >85:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+1FF4 text34 CODE >84:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+12DA text33 CODE >9:D:\MPLAB\pic\sources\c99\common\aodiv.c
+12DA text33 CODE >15:D:\MPLAB\pic\sources\c99\common\aodiv.c
+12DE text33 CODE >16:D:\MPLAB\pic\sources\c99\common\aodiv.c
+12E2 text33 CODE >17:D:\MPLAB\pic\sources\c99\common\aodiv.c
+1302 text33 CODE >18:D:\MPLAB\pic\sources\c99\common\aodiv.c
+1306 text33 CODE >20:D:\MPLAB\pic\sources\c99\common\aodiv.c
+130A text33 CODE >21:D:\MPLAB\pic\sources\c99\common\aodiv.c
+132A text33 CODE >22:D:\MPLAB\pic\sources\c99\common\aodiv.c
+132E text33 CODE >24:D:\MPLAB\pic\sources\c99\common\aodiv.c
+133A text33 CODE >25:D:\MPLAB\pic\sources\c99\common\aodiv.c
+134E text33 CODE >26:D:\MPLAB\pic\sources\c99\common\aodiv.c
+1352 text33 CODE >27:D:\MPLAB\pic\sources\c99\common\aodiv.c
+1354 text33 CODE >28:D:\MPLAB\pic\sources\c99\common\aodiv.c
+1366 text33 CODE >29:D:\MPLAB\pic\sources\c99\common\aodiv.c
+1368 text33 CODE >27:D:\MPLAB\pic\sources\c99\common\aodiv.c
+136C text33 CODE >32:D:\MPLAB\pic\sources\c99\common\aodiv.c
+137E text33 CODE >33:D:\MPLAB\pic\sources\c99\common\aodiv.c
+13A2 text33 CODE >34:D:\MPLAB\pic\sources\c99\common\aodiv.c
+13C2 text33 CODE >35:D:\MPLAB\pic\sources\c99\common\aodiv.c
+13C4 text33 CODE >37:D:\MPLAB\pic\sources\c99\common\aodiv.c
+13D6 text33 CODE >38:D:\MPLAB\pic\sources\c99\common\aodiv.c
+13DA text33 CODE >40:D:\MPLAB\pic\sources\c99\common\aodiv.c
+13E0 text33 CODE >41:D:\MPLAB\pic\sources\c99\common\aodiv.c
+1400 text33 CODE >42:D:\MPLAB\pic\sources\c99\common\aodiv.c
+1420 text33 CODE >43:D:\MPLAB\pic\sources\c99\common\aodiv.c
+17CA text32 CODE >9:D:\MPLAB\pic\sources\c99\common\aomod.c
+17CA text32 CODE >14:D:\MPLAB\pic\sources\c99\common\aomod.c
+17CE text32 CODE >15:D:\MPLAB\pic\sources\c99\common\aomod.c
+17D2 text32 CODE >16:D:\MPLAB\pic\sources\c99\common\aomod.c
+17F2 text32 CODE >17:D:\MPLAB\pic\sources\c99\common\aomod.c
+17F6 text32 CODE >19:D:\MPLAB\pic\sources\c99\common\aomod.c
+17FA text32 CODE >20:D:\MPLAB\pic\sources\c99\common\aomod.c
+181A text32 CODE >21:D:\MPLAB\pic\sources\c99\common\aomod.c
+182E text32 CODE >22:D:\MPLAB\pic\sources\c99\common\aomod.c
+1832 text32 CODE >23:D:\MPLAB\pic\sources\c99\common\aomod.c
+1834 text32 CODE >24:D:\MPLAB\pic\sources\c99\common\aomod.c
+1846 text32 CODE >25:D:\MPLAB\pic\sources\c99\common\aomod.c
+1848 text32 CODE >23:D:\MPLAB\pic\sources\c99\common\aomod.c
+184C text32 CODE >28:D:\MPLAB\pic\sources\c99\common\aomod.c
+1870 text32 CODE >29:D:\MPLAB\pic\sources\c99\common\aomod.c
+1890 text32 CODE >30:D:\MPLAB\pic\sources\c99\common\aomod.c
+18A2 text32 CODE >31:D:\MPLAB\pic\sources\c99\common\aomod.c
+18A6 text32 CODE >33:D:\MPLAB\pic\sources\c99\common\aomod.c
+18AC text32 CODE >34:D:\MPLAB\pic\sources\c99\common\aomod.c
+18CC text32 CODE >35:D:\MPLAB\pic\sources\c99\common\aomod.c
+18EC text32 CODE >36:D:\MPLAB\pic\sources\c99\common\aomod.c
+20DC text31 CODE >1:D:\MPLAB\pic\sources\c99\common\abs.c
+20DC text31 CODE >3:D:\MPLAB\pic\sources\c99\common\abs.c
+210C text31 CODE >4:D:\MPLAB\pic\sources\c99\common\abs.c
+2210 text30 CODE >7:D:\MPLAB\pic\sources\c99\common\putch.c
+2210 text30 CODE >9:D:\MPLAB\pic\sources\c99\common\putch.c
+1BE6 text29 CODE >8:D:\MPLAB\pic\sources\c99\common\nf_fputc.c
+1BE6 text29 CODE >12:D:\MPLAB\pic\sources\c99\common\nf_fputc.c
+1BF6 text29 CODE >13:D:\MPLAB\pic\sources\c99\common\nf_fputc.c
+1BFC text29 CODE >14:D:\MPLAB\pic\sources\c99\common\nf_fputc.c
+1BFE text29 CODE >15:D:\MPLAB\pic\sources\c99\common\nf_fputc.c
+1C3E text29 CODE >18:D:\MPLAB\pic\sources\c99\common\nf_fputc.c
+1C72 text29 CODE >20:D:\MPLAB\pic\sources\c99\common\nf_fputc.c
+1C84 text29 CODE >24:D:\MPLAB\pic\sources\c99\common\nf_fputc.c
+2008 text28 CODE >8:D:\MPLAB\pic\sources\c99\common\nf_fputs.c
+2008 text28 CODE >13:D:\MPLAB\pic\sources\c99\common\nf_fputs.c
+2010 text28 CODE >14:D:\MPLAB\pic\sources\c99\common\nf_fputs.c
+2012 text28 CODE >15:D:\MPLAB\pic\sources\c99\common\nf_fputs.c
+2024 text28 CODE >16:D:\MPLAB\pic\sources\c99\common\nf_fputs.c
+2028 text28 CODE >14:D:\MPLAB\pic\sources\c99\common\nf_fputs.c
+213C text27 CODE >5:D:\MPLAB\pic\sources\c99\common\strlen.c
+213C text27 CODE >7:D:\MPLAB\pic\sources\c99\common\strlen.c
+2144 text27 CODE >8:D:\MPLAB\pic\sources\c99\common\strlen.c
+2146 text27 CODE >9:D:\MPLAB\pic\sources\c99\common\strlen.c
+214A text27 CODE >8:D:\MPLAB\pic\sources\c99\common\strlen.c
+2158 text27 CODE >11:D:\MPLAB\pic\sources\c99\common\strlen.c
+2164 text27 CODE >12:D:\MPLAB\pic\sources\c99\common\strlen.c
+1C86 text26 CODE >72:D:\MPLAB\pic\sources\c99\common\doprnt.c
+1C86 text26 CODE >77:D:\MPLAB\pic\sources\c99\common\doprnt.c
+1C8C text26 CODE >78:D:\MPLAB\pic\sources\c99\common\doprnt.c
+1CA0 text26 CODE >82:D:\MPLAB\pic\sources\c99\common\doprnt.c
+1CB6 text26 CODE >83:D:\MPLAB\pic\sources\c99\common\doprnt.c
+1CBE text26 CODE >84:D:\MPLAB\pic\sources\c99\common\doprnt.c
+1CC0 text26 CODE >85:D:\MPLAB\pic\sources\c99\common\doprnt.c
+1CD4 text26 CODE >86:D:\MPLAB\pic\sources\c99\common\doprnt.c
+1CD8 text26 CODE >84:D:\MPLAB\pic\sources\c99\common\doprnt.c
+1CEC text26 CODE >90:D:\MPLAB\pic\sources\c99\common\doprnt.c
+1CF2 text26 CODE >91:D:\MPLAB\pic\sources\c99\common\doprnt.c
+1D06 text26 CODE >94:D:\MPLAB\pic\sources\c99\common\doprnt.c
+1D1E text26 CODE >95:D:\MPLAB\pic\sources\c99\common\doprnt.c
+C4A text25 CODE >287:D:\MPLAB\pic\sources\c99\common\doprnt.c
+C4A text25 CODE >293:D:\MPLAB\pic\sources\c99\common\doprnt.c
+C6A text25 CODE >294:D:\MPLAB\pic\sources\c99\common\doprnt.c
+C78 text25 CODE >295:D:\MPLAB\pic\sources\c99\common\doprnt.c
+C80 text25 CODE >296:D:\MPLAB\pic\sources\c99\common\doprnt.c
+CA0 text25 CODE >300:D:\MPLAB\pic\sources\c99\common\doprnt.c
+CA2 text25 CODE >301:D:\MPLAB\pic\sources\c99\common\doprnt.c
+CA4 text25 CODE >303:D:\MPLAB\pic\sources\c99\common\doprnt.c
+CC4 text25 CODE >304:D:\MPLAB\pic\sources\c99\common\doprnt.c
+CCC text25 CODE >305:D:\MPLAB\pic\sources\c99\common\doprnt.c
+CD8 text25 CODE >306:D:\MPLAB\pic\sources\c99\common\doprnt.c
+CDE text25 CODE >310:D:\MPLAB\pic\sources\c99\common\doprnt.c
+CE6 text25 CODE >311:D:\MPLAB\pic\sources\c99\common\doprnt.c
+CEC text25 CODE >312:D:\MPLAB\pic\sources\c99\common\doprnt.c
+CEE text25 CODE >313:D:\MPLAB\pic\sources\c99\common\doprnt.c
+CF4 text25 CODE >314:D:\MPLAB\pic\sources\c99\common\doprnt.c
+D20 text25 CODE >314:D:\MPLAB\pic\sources\c99\common\doprnt.c
+D24 text25 CODE >314:D:\MPLAB\pic\sources\c99\common\doprnt.c
+D28 text25 CODE >314:D:\MPLAB\pic\sources\c99\common\doprnt.c
+D2C text25 CODE >314:D:\MPLAB\pic\sources\c99\common\doprnt.c
+D30 text25 CODE >314:D:\MPLAB\pic\sources\c99\common\doprnt.c
+D34 text25 CODE >314:D:\MPLAB\pic\sources\c99\common\doprnt.c
+D38 text25 CODE >314:D:\MPLAB\pic\sources\c99\common\doprnt.c
+D3C text25 CODE >314:D:\MPLAB\pic\sources\c99\common\doprnt.c
+D76 text25 CODE >315:D:\MPLAB\pic\sources\c99\common\doprnt.c
+D7C text25 CODE >316:D:\MPLAB\pic\sources\c99\common\doprnt.c
+D82 text25 CODE >317:D:\MPLAB\pic\sources\c99\common\doprnt.c
+DA2 text25 CODE >317:D:\MPLAB\pic\sources\c99\common\doprnt.c
+DA6 text25 CODE >317:D:\MPLAB\pic\sources\c99\common\doprnt.c
+DAA text25 CODE >317:D:\MPLAB\pic\sources\c99\common\doprnt.c
+DAE text25 CODE >317:D:\MPLAB\pic\sources\c99\common\doprnt.c
+DB2 text25 CODE >317:D:\MPLAB\pic\sources\c99\common\doprnt.c
+DB6 text25 CODE >317:D:\MPLAB\pic\sources\c99\common\doprnt.c
+DBA text25 CODE >317:D:\MPLAB\pic\sources\c99\common\doprnt.c
+DBE text25 CODE >317:D:\MPLAB\pic\sources\c99\common\doprnt.c
+DE6 text25 CODE >312:D:\MPLAB\pic\sources\c99\common\doprnt.c
+E2A text25 CODE >321:D:\MPLAB\pic\sources\c99\common\doprnt.c
+E38 text25 CODE >322:D:\MPLAB\pic\sources\c99\common\doprnt.c
+E3E text25 CODE >323:D:\MPLAB\pic\sources\c99\common\doprnt.c
+E66 text25 CODE >327:D:\MPLAB\pic\sources\c99\common\doprnt.c
+E8E text25 CODE >328:D:\MPLAB\pic\sources\c99\common\doprnt.c
+1006 text24 CODE >692:D:\MPLAB\pic\sources\c99\common\doprnt.c
+1006 text24 CODE >702:D:\MPLAB\pic\sources\c99\common\doprnt.c
+1020 text24 CODE >703:D:\MPLAB\pic\sources\c99\common\doprnt.c
+102A text24 CODE >705:D:\MPLAB\pic\sources\c99\common\doprnt.c
+103C text24 CODE >706:D:\MPLAB\pic\sources\c99\common\doprnt.c
+1040 text24 CODE >847:D:\MPLAB\pic\sources\c99\common\doprnt.c
+1074 text24 CODE >849:D:\MPLAB\pic\sources\c99\common\doprnt.c
+107E text24 CODE >850:D:\MPLAB\pic\sources\c99\common\doprnt.c
+10B8 text24 CODE >852:D:\MPLAB\pic\sources\c99\common\doprnt.c
+10EE text24 CODE >1372:D:\MPLAB\pic\sources\c99\common\doprnt.c
+1108 text24 CODE >1373:D:\MPLAB\pic\sources\c99\common\doprnt.c
+1112 text24 CODE >1374:D:\MPLAB\pic\sources\c99\common\doprnt.c
+1126 text24 CODE >1375:D:\MPLAB\pic\sources\c99\common\doprnt.c
+1130 text24 CODE >1379:D:\MPLAB\pic\sources\c99\common\doprnt.c
+113A text24 CODE >1380:D:\MPLAB\pic\sources\c99\common\doprnt.c
+1144 text24 CODE >1384:D:\MPLAB\pic\sources\c99\common\doprnt.c
+1168 text24 CODE >1385:D:\MPLAB\pic\sources\c99\common\doprnt.c
+1E14 text23 CODE >1390:D:\MPLAB\pic\sources\c99\common\doprnt.c
+1E14 text23 CODE >1395:D:\MPLAB\pic\sources\c99\common\doprnt.c
+1E18 text23 CODE >1396:D:\MPLAB\pic\sources\c99\common\doprnt.c
+1E22 text23 CODE >1397:D:\MPLAB\pic\sources\c99\common\doprnt.c
+1E24 text23 CODE >1398:D:\MPLAB\pic\sources\c99\common\doprnt.c
+1E48 text23 CODE >1397:D:\MPLAB\pic\sources\c99\common\doprnt.c
+1E5A text23 CODE >1400:D:\MPLAB\pic\sources\c99\common\doprnt.c
+1E62 text23 CODE >1404:D:\MPLAB\pic\sources\c99\common\doprnt.c
+1F42 text22 CODE >9:D:\MPLAB\pic\sources\c99\common\nf_sprintf.c
+1F42 text22 CODE >15:D:\MPLAB\pic\sources\c99\common\nf_sprintf.c
+1F48 text22 CODE >16:D:\MPLAB\pic\sources\c99\common\nf_sprintf.c
+1F50 text22 CODE >17:D:\MPLAB\pic\sources\c99\common\nf_sprintf.c
+1F58 text22 CODE >18:D:\MPLAB\pic\sources\c99\common\nf_sprintf.c
+1F60 text22 CODE >19:D:\MPLAB\pic\sources\c99\common\nf_sprintf.c
+1F74 text22 CODE >20:D:\MPLAB\pic\sources\c99\common\nf_sprintf.c
+1F84 text22 CODE >23:D:\MPLAB\pic\sources\c99\common\nf_sprintf.c
+20A8 text21 CODE >3:D:\MPLAB\pic\sources\c99\common\strcpy.c
+20A8 text21 CODE >5:D:\MPLAB\pic\sources\c99\common\strcpy.c
+20AC text21 CODE >6:D:\MPLAB\pic\sources\c99\common\strcpy.c
+20B4 text21 CODE >7:D:\MPLAB\pic\sources\c99\common\strcpy.c
+21D4 text20 CODE >3:D:\MPLAB\pic\sources\c99\common\strcat.c
+21D4 text20 CODE >5:D:\MPLAB\pic\sources\c99\common\strcat.c
+21F4 text20 CODE >7:D:\MPLAB\pic\sources\c99\common\strcat.c
+608 intcode_body CODE >257:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+632 intcode_body CODE >259:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+636 intcode_body CODE >260:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+638 intcode_body CODE >261:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+644 intcode_body CODE >262:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+648 intcode_body CODE >263:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+64C intcode_body CODE >264:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+64E intcode_body CODE >265:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+650 intcode_body CODE >266:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+658 intcode_body CODE >267:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+666 intcode_body CODE >268:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+668 intcode_body CODE >269:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+6A0 intcode_body CODE >270:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+6A8 intcode_body CODE >273:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+6C2 intcode_body CODE >274:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+6D4 intcode_body CODE >276:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+6E0 intcode_body CODE >277:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+6E8 intcode_body CODE >279:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+6F2 intcode_body CODE >280:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+6FA intcode_body CODE >281:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+702 intcode_body CODE >283:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+70C intcode_body CODE >284:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+714 intcode_body CODE >285:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+71C intcode_body CODE >287:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+724 intcode_body CODE >288:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+72C intcode_body CODE >289:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+734 intcode_body CODE >291:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+73E intcode_body CODE >292:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+776 intcode_body CODE >293:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+780 intcode_body CODE >294:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+790 intcode_body CODE >296:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+7A6 intcode_body CODE >297:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+7B4 intcode_body CODE >298:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+7BE intcode_body CODE >299:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+7C0 intcode_body CODE >300:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+7D0 intcode_body CODE >302:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+7E6 intcode_body CODE >303:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+7F4 intcode_body CODE >304:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+7FE intcode_body CODE >307:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+800 intcode_body CODE >308:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+80A intcode_body CODE >309:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+814 intcode_body CODE >310:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+81C intcode_body CODE >311:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+830 intcode_body CODE >312:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+838 intcode_body CODE >313:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+846 intcode_body CODE >317:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+848 intcode_body CODE >318:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+84A intcode_body CODE >321:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+84E intcode_body CODE >322:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+852 intcode_body CODE >323:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+856 intcode_body CODE >325:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+860 intcode_body CODE >326:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+868 intcode_body CODE >327:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+870 intcode_body CODE >328:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+872 intcode_body CODE >330:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+8AA intcode_body CODE >331:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+8BE intcode_body CODE >332:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+8C0 intcode_body CODE >335:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+8F0 intcode_body CODE >336:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+904 intcode_body CODE >337:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+906 intcode_body CODE >340:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+936 intcode_body CODE >341:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+94A intcode_body CODE >342:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+94C intcode_body CODE >345:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+968 intcode_body CODE >346:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+97C intcode_body CODE >347:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+97E intcode_body CODE >351:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+98A intcode_body CODE >351:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+992 intcode_body CODE >351:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+998 intcode_body CODE >351:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+99E intcode_body CODE >351:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+9A4 intcode_body CODE >351:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+9A8 intcode_body CODE >353:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+9AE intcode_body CODE >354:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+9B8 intcode_body CODE >355:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+9C0 intcode_body CODE >359:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+9C2 intcode_body CODE >361:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+19CE text18 CODE >7:D:\MPLAB\pic\sources\c99\common\aldiv.c
+19CE text18 CODE >13:D:\MPLAB\pic\sources\c99\common\aldiv.c
+19D2 text18 CODE >14:D:\MPLAB\pic\sources\c99\common\aldiv.c
+19D6 text18 CODE >15:D:\MPLAB\pic\sources\c99\common\aldiv.c
+19E6 text18 CODE >16:D:\MPLAB\pic\sources\c99\common\aldiv.c
+19EA text18 CODE >18:D:\MPLAB\pic\sources\c99\common\aldiv.c
+19EE text18 CODE >19:D:\MPLAB\pic\sources\c99\common\aldiv.c
+19FE text18 CODE >20:D:\MPLAB\pic\sources\c99\common\aldiv.c
+1A02 text18 CODE >22:D:\MPLAB\pic\sources\c99\common\aldiv.c
+1A12 text18 CODE >23:D:\MPLAB\pic\sources\c99\common\aldiv.c
+1A1E text18 CODE >24:D:\MPLAB\pic\sources\c99\common\aldiv.c
+1A22 text18 CODE >25:D:\MPLAB\pic\sources\c99\common\aldiv.c
+1A24 text18 CODE >26:D:\MPLAB\pic\sources\c99\common\aldiv.c
+1A2E text18 CODE >27:D:\MPLAB\pic\sources\c99\common\aldiv.c
+1A30 text18 CODE >25:D:\MPLAB\pic\sources\c99\common\aldiv.c
+1A34 text18 CODE >30:D:\MPLAB\pic\sources\c99\common\aldiv.c
+1A3E text18 CODE >31:D:\MPLAB\pic\sources\c99\common\aldiv.c
+1A52 text18 CODE >32:D:\MPLAB\pic\sources\c99\common\aldiv.c
+1A62 text18 CODE >33:D:\MPLAB\pic\sources\c99\common\aldiv.c
+1A64 text18 CODE >35:D:\MPLAB\pic\sources\c99\common\aldiv.c
+1A6E text18 CODE >36:D:\MPLAB\pic\sources\c99\common\aldiv.c
+1A72 text18 CODE >38:D:\MPLAB\pic\sources\c99\common\aldiv.c
+1A78 text18 CODE >39:D:\MPLAB\pic\sources\c99\common\aldiv.c
+1A88 text18 CODE >40:D:\MPLAB\pic\sources\c99\common\aldiv.c
+1A98 text18 CODE >41:D:\MPLAB\pic\sources\c99\common\aldiv.c
+16A0 text17 CODE >33:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+16A0 text17 CODE >35:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+170E text17 CODE >37:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+1712 text17 CODE >38:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+171E text17 CODE >40:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+172C text17 CODE >42:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+179A text17 CODE >43:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+17A8 text17 CODE >44:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+17B4 text17 CODE >45:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+17B8 text17 CODE >46:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+17BC text17 CODE >49:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+17BC text17 CODE >51:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+17C0 text17 CODE >52:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+17C4 text17 CODE >55:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+17C8 text17 CODE >57:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+21F6 text16 CODE >75:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+21F8 text16 CODE >77:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+21FC text16 CODE >78:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+2200 text16 CODE >79:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+1F86 text15 CODE >81:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+1F86 text15 CODE >83:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+1F92 text15 CODE >84:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+1F94 text15 CODE >85:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+1FB4 text15 CODE >84:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+1174 text14 CODE >9:D:\MPLAB\pic\sources\c99\common\aodiv.c
+1174 text14 CODE >15:D:\MPLAB\pic\sources\c99\common\aodiv.c
+117A text14 CODE >16:D:\MPLAB\pic\sources\c99\common\aodiv.c
+1180 text14 CODE >17:D:\MPLAB\pic\sources\c99\common\aodiv.c
+11A0 text14 CODE >18:D:\MPLAB\pic\sources\c99\common\aodiv.c
+11A6 text14 CODE >20:D:\MPLAB\pic\sources\c99\common\aodiv.c
+11AC text14 CODE >21:D:\MPLAB\pic\sources\c99\common\aodiv.c
+11CC text14 CODE >22:D:\MPLAB\pic\sources\c99\common\aodiv.c
+11D2 text14 CODE >24:D:\MPLAB\pic\sources\c99\common\aodiv.c
+11DE text14 CODE >25:D:\MPLAB\pic\sources\c99\common\aodiv.c
+11F4 text14 CODE >26:D:\MPLAB\pic\sources\c99\common\aodiv.c
+11FA text14 CODE >27:D:\MPLAB\pic\sources\c99\common\aodiv.c
+11FC text14 CODE >28:D:\MPLAB\pic\sources\c99\common\aodiv.c
+120E text14 CODE >29:D:\MPLAB\pic\sources\c99\common\aodiv.c
+1212 text14 CODE >27:D:\MPLAB\pic\sources\c99\common\aodiv.c
+1218 text14 CODE >32:D:\MPLAB\pic\sources\c99\common\aodiv.c
+122C text14 CODE >33:D:\MPLAB\pic\sources\c99\common\aodiv.c
+1252 text14 CODE >34:D:\MPLAB\pic\sources\c99\common\aodiv.c
+1272 text14 CODE >35:D:\MPLAB\pic\sources\c99\common\aodiv.c
+1276 text14 CODE >37:D:\MPLAB\pic\sources\c99\common\aodiv.c
+128A text14 CODE >38:D:\MPLAB\pic\sources\c99\common\aodiv.c
+1290 text14 CODE >40:D:\MPLAB\pic\sources\c99\common\aodiv.c
+1298 text14 CODE >41:D:\MPLAB\pic\sources\c99\common\aodiv.c
+12B8 text14 CODE >42:D:\MPLAB\pic\sources\c99\common\aodiv.c
+12D8 text14 CODE >43:D:\MPLAB\pic\sources\c99\common\aodiv.c
+1566 text13 CODE >9:D:\MPLAB\pic\sources\c99\common\aomod.c
+1566 text13 CODE >14:D:\MPLAB\pic\sources\c99\common\aomod.c
+156C text13 CODE >15:D:\MPLAB\pic\sources\c99\common\aomod.c
+1572 text13 CODE >16:D:\MPLAB\pic\sources\c99\common\aomod.c
+1592 text13 CODE >17:D:\MPLAB\pic\sources\c99\common\aomod.c
+1598 text13 CODE >19:D:\MPLAB\pic\sources\c99\common\aomod.c
+159E text13 CODE >20:D:\MPLAB\pic\sources\c99\common\aomod.c
+15BE text13 CODE >21:D:\MPLAB\pic\sources\c99\common\aomod.c
+15D2 text13 CODE >22:D:\MPLAB\pic\sources\c99\common\aomod.c
+15D8 text13 CODE >23:D:\MPLAB\pic\sources\c99\common\aomod.c
+15DA text13 CODE >24:D:\MPLAB\pic\sources\c99\common\aomod.c
+15EC text13 CODE >25:D:\MPLAB\pic\sources\c99\common\aomod.c
+15F0 text13 CODE >23:D:\MPLAB\pic\sources\c99\common\aomod.c
+15F6 text13 CODE >28:D:\MPLAB\pic\sources\c99\common\aomod.c
+161C text13 CODE >29:D:\MPLAB\pic\sources\c99\common\aomod.c
+163C text13 CODE >30:D:\MPLAB\pic\sources\c99\common\aomod.c
+164E text13 CODE >31:D:\MPLAB\pic\sources\c99\common\aomod.c
+1654 text13 CODE >33:D:\MPLAB\pic\sources\c99\common\aomod.c
+165C text13 CODE >34:D:\MPLAB\pic\sources\c99\common\aomod.c
+167E text13 CODE >35:D:\MPLAB\pic\sources\c99\common\aomod.c
+169E text13 CODE >36:D:\MPLAB\pic\sources\c99\common\aomod.c
+2074 text12 CODE >1:D:\MPLAB\pic\sources\c99\common\abs.c
+2074 text12 CODE >3:D:\MPLAB\pic\sources\c99\common\abs.c
+20A6 text12 CODE >4:D:\MPLAB\pic\sources\c99\common\abs.c
+220E text11 CODE >7:D:\MPLAB\pic\sources\c99\common\putch.c
+220E text11 CODE >9:D:\MPLAB\pic\sources\c99\common\putch.c
+1B46 text10 CODE >8:D:\MPLAB\pic\sources\c99\common\nf_fputc.c
+1B46 text10 CODE >12:D:\MPLAB\pic\sources\c99\common\nf_fputc.c
+1B56 text10 CODE >13:D:\MPLAB\pic\sources\c99\common\nf_fputc.c
+1B5C text10 CODE >14:D:\MPLAB\pic\sources\c99\common\nf_fputc.c
+1B5E text10 CODE >15:D:\MPLAB\pic\sources\c99\common\nf_fputc.c
+1B9E text10 CODE >18:D:\MPLAB\pic\sources\c99\common\nf_fputc.c
+1BD2 text10 CODE >20:D:\MPLAB\pic\sources\c99\common\nf_fputc.c
+1BE4 text10 CODE >24:D:\MPLAB\pic\sources\c99\common\nf_fputc.c
+1EFC text9 CODE >8:D:\MPLAB\pic\sources\c99\common\nf_fputs.c
+1EFC text9 CODE >13:D:\MPLAB\pic\sources\c99\common\nf_fputs.c
+1F06 text9 CODE >14:D:\MPLAB\pic\sources\c99\common\nf_fputs.c
+1F08 text9 CODE >15:D:\MPLAB\pic\sources\c99\common\nf_fputs.c
+1F1C text9 CODE >16:D:\MPLAB\pic\sources\c99\common\nf_fputs.c
+1F22 text9 CODE >14:D:\MPLAB\pic\sources\c99\common\nf_fputs.c
+210E text8 CODE >5:D:\MPLAB\pic\sources\c99\common\strlen.c
+210E text8 CODE >7:D:\MPLAB\pic\sources\c99\common\strlen.c
+2116 text8 CODE >8:D:\MPLAB\pic\sources\c99\common\strlen.c
+2118 text8 CODE >9:D:\MPLAB\pic\sources\c99\common\strlen.c
+211E text8 CODE >8:D:\MPLAB\pic\sources\c99\common\strlen.c
+212C text8 CODE >11:D:\MPLAB\pic\sources\c99\common\strlen.c
+213A text8 CODE >12:D:\MPLAB\pic\sources\c99\common\strlen.c
+1A9A text7 CODE >72:D:\MPLAB\pic\sources\c99\common\doprnt.c
+1A9A text7 CODE >77:D:\MPLAB\pic\sources\c99\common\doprnt.c
+1AA0 text7 CODE >78:D:\MPLAB\pic\sources\c99\common\doprnt.c
+1AB4 text7 CODE >82:D:\MPLAB\pic\sources\c99\common\doprnt.c
+1ACC text7 CODE >83:D:\MPLAB\pic\sources\c99\common\doprnt.c
+1AD4 text7 CODE >84:D:\MPLAB\pic\sources\c99\common\doprnt.c
+1AD6 text7 CODE >85:D:\MPLAB\pic\sources\c99\common\doprnt.c
+1AEA text7 CODE >86:D:\MPLAB\pic\sources\c99\common\doprnt.c
+1AF0 text7 CODE >84:D:\MPLAB\pic\sources\c99\common\doprnt.c
+1B0A text7 CODE >90:D:\MPLAB\pic\sources\c99\common\doprnt.c
+1B0E text7 CODE >91:D:\MPLAB\pic\sources\c99\common\doprnt.c
+1B22 text7 CODE >94:D:\MPLAB\pic\sources\c99\common\doprnt.c
+1B44 text7 CODE >95:D:\MPLAB\pic\sources\c99\common\doprnt.c
+9EE text6 CODE >287:D:\MPLAB\pic\sources\c99\common\doprnt.c
+9EE text6 CODE >293:D:\MPLAB\pic\sources\c99\common\doprnt.c
+A0E text6 CODE >294:D:\MPLAB\pic\sources\c99\common\doprnt.c
+A1C text6 CODE >295:D:\MPLAB\pic\sources\c99\common\doprnt.c
+A24 text6 CODE >296:D:\MPLAB\pic\sources\c99\common\doprnt.c
+A44 text6 CODE >300:D:\MPLAB\pic\sources\c99\common\doprnt.c
+A48 text6 CODE >301:D:\MPLAB\pic\sources\c99\common\doprnt.c
+A4A text6 CODE >303:D:\MPLAB\pic\sources\c99\common\doprnt.c
+A6C text6 CODE >304:D:\MPLAB\pic\sources\c99\common\doprnt.c
+A74 text6 CODE >305:D:\MPLAB\pic\sources\c99\common\doprnt.c
+A84 text6 CODE >306:D:\MPLAB\pic\sources\c99\common\doprnt.c
+A8C text6 CODE >310:D:\MPLAB\pic\sources\c99\common\doprnt.c
+A96 text6 CODE >311:D:\MPLAB\pic\sources\c99\common\doprnt.c
+A9A text6 CODE >312:D:\MPLAB\pic\sources\c99\common\doprnt.c
+A9C text6 CODE >313:D:\MPLAB\pic\sources\c99\common\doprnt.c
+AA4 text6 CODE >314:D:\MPLAB\pic\sources\c99\common\doprnt.c
+AD0 text6 CODE >314:D:\MPLAB\pic\sources\c99\common\doprnt.c
+AD4 text6 CODE >314:D:\MPLAB\pic\sources\c99\common\doprnt.c
+AD8 text6 CODE >314:D:\MPLAB\pic\sources\c99\common\doprnt.c
+ADC text6 CODE >314:D:\MPLAB\pic\sources\c99\common\doprnt.c
+AE0 text6 CODE >314:D:\MPLAB\pic\sources\c99\common\doprnt.c
+AE4 text6 CODE >314:D:\MPLAB\pic\sources\c99\common\doprnt.c
+AE8 text6 CODE >314:D:\MPLAB\pic\sources\c99\common\doprnt.c
+AEC text6 CODE >314:D:\MPLAB\pic\sources\c99\common\doprnt.c
+B26 text6 CODE >315:D:\MPLAB\pic\sources\c99\common\doprnt.c
+B2E text6 CODE >316:D:\MPLAB\pic\sources\c99\common\doprnt.c
+B34 text6 CODE >317:D:\MPLAB\pic\sources\c99\common\doprnt.c
+B54 text6 CODE >317:D:\MPLAB\pic\sources\c99\common\doprnt.c
+B58 text6 CODE >317:D:\MPLAB\pic\sources\c99\common\doprnt.c
+B5C text6 CODE >317:D:\MPLAB\pic\sources\c99\common\doprnt.c
+B60 text6 CODE >317:D:\MPLAB\pic\sources\c99\common\doprnt.c
+B64 text6 CODE >317:D:\MPLAB\pic\sources\c99\common\doprnt.c
+B68 text6 CODE >317:D:\MPLAB\pic\sources\c99\common\doprnt.c
+B6C text6 CODE >317:D:\MPLAB\pic\sources\c99\common\doprnt.c
+B70 text6 CODE >317:D:\MPLAB\pic\sources\c99\common\doprnt.c
+B98 text6 CODE >312:D:\MPLAB\pic\sources\c99\common\doprnt.c
+BDE text6 CODE >321:D:\MPLAB\pic\sources\c99\common\doprnt.c
+BEE text6 CODE >322:D:\MPLAB\pic\sources\c99\common\doprnt.c
+BF6 text6 CODE >323:D:\MPLAB\pic\sources\c99\common\doprnt.c
+C1E text6 CODE >327:D:\MPLAB\pic\sources\c99\common\doprnt.c
+C48 text6 CODE >328:D:\MPLAB\pic\sources\c99\common\doprnt.c
+E90 text5 CODE >692:D:\MPLAB\pic\sources\c99\common\doprnt.c
+E90 text5 CODE >702:D:\MPLAB\pic\sources\c99\common\doprnt.c
+EAA text5 CODE >703:D:\MPLAB\pic\sources\c99\common\doprnt.c
+EB4 text5 CODE >705:D:\MPLAB\pic\sources\c99\common\doprnt.c
+EC6 text5 CODE >706:D:\MPLAB\pic\sources\c99\common\doprnt.c
+ECA text5 CODE >847:D:\MPLAB\pic\sources\c99\common\doprnt.c
+EFE text5 CODE >849:D:\MPLAB\pic\sources\c99\common\doprnt.c
+F08 text5 CODE >850:D:\MPLAB\pic\sources\c99\common\doprnt.c
+F44 text5 CODE >852:D:\MPLAB\pic\sources\c99\common\doprnt.c
+F7A text5 CODE >1372:D:\MPLAB\pic\sources\c99\common\doprnt.c
+F94 text5 CODE >1373:D:\MPLAB\pic\sources\c99\common\doprnt.c
+F9E text5 CODE >1374:D:\MPLAB\pic\sources\c99\common\doprnt.c
+FB2 text5 CODE >1375:D:\MPLAB\pic\sources\c99\common\doprnt.c
+FBE text5 CODE >1379:D:\MPLAB\pic\sources\c99\common\doprnt.c
+FC8 text5 CODE >1380:D:\MPLAB\pic\sources\c99\common\doprnt.c
+FD4 text5 CODE >1384:D:\MPLAB\pic\sources\c99\common\doprnt.c
+FFA text5 CODE >1385:D:\MPLAB\pic\sources\c99\common\doprnt.c
+1E64 text4 CODE >1390:D:\MPLAB\pic\sources\c99\common\doprnt.c
+1E64 text4 CODE >1395:D:\MPLAB\pic\sources\c99\common\doprnt.c
+1E68 text4 CODE >1396:D:\MPLAB\pic\sources\c99\common\doprnt.c
+1E70 text4 CODE >1397:D:\MPLAB\pic\sources\c99\common\doprnt.c
+1E72 text4 CODE >1398:D:\MPLAB\pic\sources\c99\common\doprnt.c
+1E96 text4 CODE >1397:D:\MPLAB\pic\sources\c99\common\doprnt.c
+1EA8 text4 CODE >1400:D:\MPLAB\pic\sources\c99\common\doprnt.c
+1EB0 text4 CODE >1404:D:\MPLAB\pic\sources\c99\common\doprnt.c
+1EB2 text3 CODE >9:D:\MPLAB\pic\sources\c99\common\nf_sprintf.c
+1EB2 text3 CODE >15:D:\MPLAB\pic\sources\c99\common\nf_sprintf.c
+1EBA text3 CODE >16:D:\MPLAB\pic\sources\c99\common\nf_sprintf.c
+1EC2 text3 CODE >17:D:\MPLAB\pic\sources\c99\common\nf_sprintf.c
+1ECA text3 CODE >18:D:\MPLAB\pic\sources\c99\common\nf_sprintf.c
+1ED2 text3 CODE >19:D:\MPLAB\pic\sources\c99\common\nf_sprintf.c
+1EEA text3 CODE >20:D:\MPLAB\pic\sources\c99\common\nf_sprintf.c
+1EFA text3 CODE >23:D:\MPLAB\pic\sources\c99\common\nf_sprintf.c
+2040 text2 CODE >3:D:\MPLAB\pic\sources\c99\common\strcpy.c
+2040 text2 CODE >5:D:\MPLAB\pic\sources\c99\common\strcpy.c
+2044 text2 CODE >6:D:\MPLAB\pic\sources\c99\common\strcpy.c
+204C text2 CODE >7:D:\MPLAB\pic\sources\c99\common\strcpy.c
+21B2 text1 CODE >3:D:\MPLAB\pic\sources\c99\common\strcat.c
+21B2 text1 CODE >5:D:\MPLAB\pic\sources\c99\common\strcat.c
+21D2 text1 CODE >7:D:\MPLAB\pic\sources\c99\common\strcat.c
+1422 text0 CODE >176:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+1422 text0 CODE >178:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+1426 text0 CODE >179:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+142A text0 CODE >180:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+142E text0 CODE >181:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+1432 text0 CODE >185:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+1434 text0 CODE >186:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+1436 text0 CODE >187:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+1438 text0 CODE >188:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+143C text0 CODE >189:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+143E text0 CODE >190:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+1442 text0 CODE >191:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+1446 text0 CODE >194:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+1448 text0 CODE >195:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+144A text0 CODE >196:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+144C text0 CODE >197:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+1450 text0 CODE >200:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+1452 text0 CODE >201:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+1454 text0 CODE >202:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+1456 text0 CODE >203:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+1458 text0 CODE >204:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+145A text0 CODE >207:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+145C text0 CODE >208:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+145E text0 CODE >209:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+1460 text0 CODE >210:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+1462 text0 CODE >211:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+1464 text0 CODE >214:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+1466 text0 CODE >215:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+1468 text0 CODE >216:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+146A text0 CODE >217:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+146C text0 CODE >218:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+1470 text0 CODE >220:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+1482 text0 CODE >225:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+1490 text0 CODE >226:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+14A2 text0 CODE >227:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+14AC text0 CODE >229:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+14C4 text0 CODE >230:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+14D6 text0 CODE >231:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+14E2 text0 CODE >232:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+14EC text0 CODE >235:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+14FA text0 CODE >236:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+150C text0 CODE >237:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+1516 text0 CODE >238:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+1518 text0 CODE >239:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+1520 text0 CODE >240:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+1522 text0 CODE >242:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+1528 text0 CODE >243:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+1532 text0 CODE >246:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+1540 text0 CODE >247:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+1552 text0 CODE >248:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+155C text0 CODE >249:C:\Users\vitor\Desktop\calculador de volume com display V2\pwm.X\pwm.c
+2166 cinit CODE >535:C:\Users\vitor\AppData\Local\Temp\xcAs6mg.s
+2166 cinit CODE >537:C:\Users\vitor\AppData\Local\Temp\xcAs6mg.s
+2166 cinit CODE >540:C:\Users\vitor\AppData\Local\Temp\xcAs6mg.s
+2166 cinit CODE >601:C:\Users\vitor\AppData\Local\Temp\xcAs6mg.s
+216A cinit CODE >602:C:\Users\vitor\AppData\Local\Temp\xcAs6mg.s
+216C cinit CODE >603:C:\Users\vitor\AppData\Local\Temp\xcAs6mg.s
+216C cinit CODE >604:C:\Users\vitor\AppData\Local\Temp\xcAs6mg.s
+216E cinit CODE >605:C:\Users\vitor\AppData\Local\Temp\xcAs6mg.s
+2170 cinit CODE >606:C:\Users\vitor\AppData\Local\Temp\xcAs6mg.s
+2172 cinit CODE >609:C:\Users\vitor\AppData\Local\Temp\xcAs6mg.s
+2176 cinit CODE >610:C:\Users\vitor\AppData\Local\Temp\xcAs6mg.s
+2178 cinit CODE >611:C:\Users\vitor\AppData\Local\Temp\xcAs6mg.s
+2178 cinit CODE >612:C:\Users\vitor\AppData\Local\Temp\xcAs6mg.s
+217A cinit CODE >613:C:\Users\vitor\AppData\Local\Temp\xcAs6mg.s
+217C cinit CODE >614:C:\Users\vitor\AppData\Local\Temp\xcAs6mg.s
+217E cinit CODE >620:C:\Users\vitor\AppData\Local\Temp\xcAs6mg.s
+217E cinit CODE >622:C:\Users\vitor\AppData\Local\Temp\xcAs6mg.s
+2180 cinit CODE >623:C:\Users\vitor\AppData\Local\Temp\xcAs6mg.s
+2182 cinit CODE >625:C:\Users\vitor\AppData\Local\Temp\xcAs6mg.s
+2184 cinit CODE >626:C:\Users\vitor\AppData\Local\Temp\xcAs6mg.s
+2186 cinit CODE >627:C:\Users\vitor\AppData\Local\Temp\xcAs6mg.s
+2188 cinit CODE >628:C:\Users\vitor\AppData\Local\Temp\xcAs6mg.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+i2_abs 20DC 0 CODE 0 text31 dist/default/production\pwm.X.production.o
+i2_pad 1C86 0 CODE 0 text26 dist/default/production\pwm.X.production.o
+___awdiv@counter B 0 COMRAM 1 cstackCOMRAM dist/default/production\pwm.X.production.o
+__Lmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\pwm.X.production.o
+__Hspace_0 2212 0 ABS 0 - dist/default/production\pwm.X.production.o
+__Hspace_1 18F 0 ABS 0 - dist/default/production\pwm.X.production.o
+__Hspace_2 0 0 ABS 0 - dist/default/production\pwm.X.production.o
+__Hspace_4 60000E 0 ABS 0 - dist/default/production\pwm.X.production.o
+UART_Print@data AD 0 BANK0 1 cstackBANK0 dist/default/production\pwm.X.production.o
+i2dtoa@fp 1C 0 COMRAM 1 cstackCOMRAM dist/default/production\pwm.X.production.o
+__Hibigdata 0 0 CODE 0 ibigdata dist/default/production\pwm.X.production.o
+i2___aomod@counter 11 0 COMRAM 1 cstackCOMRAM dist/default/production\pwm.X.production.o
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\vitor\AppData\Local\Temp\xcAs6mg.o
+__Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\pwm.X.production.o
+i2___aodiv@quotient 13 0 COMRAM 1 cstackCOMRAM dist/default/production\pwm.X.production.o
+isr@str_598 94 0 BANK0 1 cstackBANK0 dist/default/production\pwm.X.production.o
+_T1CONbits FCD 0 ABS 0 - dist/default/production\pwm.X.production.o
+?i2_vfpfcnvrt 40 0 COMRAM 1 cstackCOMRAM dist/default/production\pwm.X.production.o
+?_abs AE 0 BANK0 1 cstackBANK0 dist/default/production\pwm.X.production.o
+?_pad 103 0 BANK1 1 cstackBANK1 dist/default/production\pwm.X.production.o
+?_vfprintf 144 0 BANK1 1 cstackBANK1 dist/default/production\pwm.X.production.o
+i2___aomod@dividend 1 0 COMRAM 1 cstackCOMRAM dist/default/production\pwm.X.production.o
+__Lsmallconst 600 0 SMALLCONST 0 smallconst dist/default/production\pwm.X.production.o
+_valor_equivalente 18EE 0 CODE 0 text36 dist/default/production\pwm.X.production.o
+_RCIF 7CF5 0 ABS 0 - dist/default/production\pwm.X.production.o
+_TRMT 7D61 0 ABS 0 - dist/default/production\pwm.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\vitor\AppData\Local\Temp\xcAs6mg.o
+_dbuf 16F 0 BANK1 1 bssBANK1 dist/default/production\pwm.X.production.o
+_dtoa 9EE 0 CODE 0 text6 dist/default/production\pwm.X.production.o
+_main 1422 0 CODE 0 text0 dist/default/production\pwm.X.production.o
+_nout 165 0 BANK1 1 bssBANK1 dist/default/production\pwm.X.production.o
+_prec C0 0 BANK0 1 bssBANK0 dist/default/production\pwm.X.production.o
+_valX C8 0 BANK0 1 bssBANK0 dist/default/production\pwm.X.production.o
+_valY C6 0 BANK0 1 bssBANK0 dist/default/production\pwm.X.production.o
+_valZ C4 0 BANK0 1 bssBANK0 dist/default/production\pwm.X.production.o
+abs@a AE 0 BANK0 1 cstackBANK0 dist/default/production\pwm.X.production.o
+btemp 76 0 COMRAM 1 temp dist/default/production\pwm.X.production.o
+pad@i 109 0 BANK1 1 cstackBANK1 dist/default/production\pwm.X.production.o
+pad@p 107 0 BANK1 1 cstackBANK1 dist/default/production\pwm.X.production.o
+pad@w 10B 0 BANK1 1 cstackBANK1 dist/default/production\pwm.X.production.o
+start E 0 CODE 0 init C:\Users\vitor\AppData\Local\Temp\xcAs6mg.o
+i2sprintf@ap 5B 0 COMRAM 1 cstackCOMRAM dist/default/production\pwm.X.production.o
+___aomod@counter AC 0 BANK0 1 cstackBANK0 dist/default/production\pwm.X.production.o
+i2_dtoa C4A 0 CODE 0 text25 dist/default/production\pwm.X.production.o
+i2abs@a 13 0 COMRAM 1 cstackCOMRAM dist/default/production\pwm.X.production.o
+i2pad@i 18 0 COMRAM 1 cstackCOMRAM dist/default/production\pwm.X.production.o
+i2pad@p 15 0 COMRAM 1 cstackCOMRAM dist/default/production\pwm.X.production.o
+i2pad@w 1A 0 COMRAM 1 cstackCOMRAM dist/default/production\pwm.X.production.o
+pad@fp 103 0 BANK1 1 cstackBANK1 dist/default/production\pwm.X.production.o
+?___wmul 1 0 COMRAM 1 cstackCOMRAM dist/default/production\pwm.X.production.o
+i2_UART_PutC 2202 0 CODE 0 text35 dist/default/production\pwm.X.production.o
+i2strcpy@src 7 0 COMRAM 1 cstackCOMRAM dist/default/production\pwm.X.production.o
+__Hpowerup E 0 CODE 0 powerup dist/default/production\pwm.X.production.o
+__end_of_vfpfcnvrt 1006 0 CODE 0 text5 dist/default/production\pwm.X.production.o
+___awmod@sign 6 0 COMRAM 1 cstackCOMRAM dist/default/production\pwm.X.production.o
+_T0CONbits FD5 0 ABS 0 - dist/default/production\pwm.X.production.o
+ttemp5 77 0 COMRAM 1 temp dist/default/production\pwm.X.production.o
+ttemp6 7A 0 COMRAM 1 temp dist/default/production\pwm.X.production.o
+ttemp7 7E 0 COMRAM 1 temp dist/default/production\pwm.X.production.o
+__accesstop 80 0 ABS 0 - C:\Users\vitor\AppData\Local\Temp\xcAs6mg.o
+intlevel0 0 0 CODE 0 text C:\Users\vitor\AppData\Local\Temp\xcAs6mg.o
+intlevel1 0 0 CODE 0 text C:\Users\vitor\AppData\Local\Temp\xcAs6mg.o
+intlevel2 0 0 CODE 0 text C:\Users\vitor\AppData\Local\Temp\xcAs6mg.o
+intlevel3 0 0 CODE 0 text C:\Users\vitor\AppData\Local\Temp\xcAs6mg.o
+strcat@dest B7 0 BANK0 1 cstackBANK0 dist/default/production\pwm.X.production.o
+___aldiv@divisor B0 0 BANK0 1 cstackBANK0 dist/default/production\pwm.X.production.o
+__LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\pwm.X.production.o
+wtemp8 77 0 COMRAM 1 temp dist/default/production\pwm.X.production.o
+_UART_Print 1F86 0 CODE 0 text15 dist/default/production\pwm.X.production.o
+i2sprintf@fmt 58 0 COMRAM 1 cstackCOMRAM dist/default/production\pwm.X.production.o
+__Hifardata 0 0 CODE 0 ifardata dist/default/production\pwm.X.production.o
+___aldiv@sign B5 0 BANK0 1 cstackBANK0 dist/default/production\pwm.X.production.o
+___awdiv@sign C 0 COMRAM 1 cstackCOMRAM dist/default/production\pwm.X.production.o
+__Hclrtext 0 0 ABS 0 clrtext dist/default/production\pwm.X.production.o
+_vfpfcnvrt E90 0 CODE 0 text5 dist/default/production\pwm.X.production.o
+dtoa@fp 110 0 BANK1 1 cstackBANK1 dist/default/production\pwm.X.production.o
+___wmul@multiplicand 3 0 COMRAM 1 cstackCOMRAM dist/default/production\pwm.X.production.o
+i2___aomod@sign 12 0 COMRAM 1 cstackCOMRAM dist/default/production\pwm.X.production.o
+_ADCON1 FC1 0 ABS 0 - dist/default/production\pwm.X.production.o
+___awdiv@dividend 7 0 COMRAM 1 cstackCOMRAM dist/default/production\pwm.X.production.o
+___inthi_sp 0 0 STACK 2 stack C:\Users\vitor\AppData\Local\Temp\xcAs6mg.o
+___intlo_sp 0 0 STACK 2 stack C:\Users\vitor\AppData\Local\Temp\xcAs6mg.o
+_dig_val CC 0 BANK0 1 bssBANK0 dist/default/production\pwm.X.production.o
+__Hintcode_body 0 0 ABS 0 intcode_body dist/default/production\pwm.X.production.o
+__end_of___wmul 21B2 0 CODE 0 text37 dist/default/production\pwm.X.production.o
+__Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\pwm.X.production.o
+main@str 15D 0 BANK1 1 cstackBANK1 dist/default/production\pwm.X.production.o
+_flag_MENSURAR 167 0 BANK1 1 bssBANK1 dist/default/production\pwm.X.production.o
+__Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\pwm.X.production.o
+i2___aodiv@sign 12 0 COMRAM 1 cstackCOMRAM dist/default/production\pwm.X.production.o
+__Hintcodelo E 0 CODE 0 intcodelo dist/default/production\pwm.X.production.o
+___awdiv@divisor 9 0 COMRAM 1 cstackCOMRAM dist/default/production\pwm.X.production.o
+__end_of___aldiv 1A9A 0 CODE 0 text18 dist/default/production\pwm.X.production.o
+__end_of___aodiv 12DA 0 CODE 0 text14 dist/default/production\pwm.X.production.o
+__end_of___aomod 16A0 0 CODE 0 text13 dist/default/production\pwm.X.production.o
+__end_of___awdiv 1DA4 0 CODE 0 text39 dist/default/production\pwm.X.production.o
+__end_of___awmod 1E14 0 CODE 0 text38 dist/default/production\pwm.X.production.o
+i2vfprintf@fmt 52 0 COMRAM 1 cstackCOMRAM dist/default/production\pwm.X.production.o
+i2_vfprintf 1E14 0 CODE 0 text23 dist/default/production\pwm.X.production.o
+___aodiv@quotient AE 0 BANK0 1 cstackBANK0 dist/default/production\pwm.X.production.o
+?_strlen AC 0 BANK0 1 cstackBANK0 dist/default/production\pwm.X.production.o
+i2___aomod@divisor 9 0 COMRAM 1 cstackCOMRAM dist/default/production\pwm.X.production.o
+?i2___aodiv 1 0 COMRAM 1 cstackCOMRAM dist/default/production\pwm.X.production.o
+?i2___aomod 1 0 COMRAM 1 cstackCOMRAM dist/default/production\pwm.X.production.o
+i2UART_Print@i 4 0 COMRAM 1 cstackCOMRAM dist/default/production\pwm.X.production.o
+___aomod@dividend 100 0 BANK1 1 cstackBANK1 dist/default/production\pwm.X.production.o
+i2vfpfcnvrt@ap 44 0 COMRAM 1 cstackCOMRAM dist/default/production\pwm.X.production.o
+i2vfpfcnvrt@fp 40 0 COMRAM 1 cstackCOMRAM dist/default/production\pwm.X.production.o
+i2vfpfcnvrt@ll 48 0 COMRAM 1 cstackCOMRAM dist/default/production\pwm.X.production.o
+__end_of_UART_Print 1FC8 0 CODE 0 text15 dist/default/production\pwm.X.production.o
+i2UART_PutC@data 1 0 COMRAM 1 cstackCOMRAM dist/default/production\pwm.X.production.o
+valor_equivalente@dig 1 0 COMRAM 1 cstackCOMRAM dist/default/production\pwm.X.production.o
+valor_equivalente@val 3 0 COMRAM 1 cstackCOMRAM dist/default/production\pwm.X.production.o
+i2vfpfcnvrt@fmt 42 0 COMRAM 1 cstackCOMRAM dist/default/production\pwm.X.production.o
+_INTCON2bits FF1 0 ABS 0 - dist/default/production\pwm.X.production.o
+_INTCON3bits FF0 0 ABS 0 - dist/default/production\pwm.X.production.o
+__Lintcodelo E 0 CODE 0 intcodelo dist/default/production\pwm.X.production.o
+___aomod@divisor 108 0 BANK1 1 cstackBANK1 dist/default/production\pwm.X.production.o
+i2_fputc 1BE6 0 CODE 0 text29 dist/default/production\pwm.X.production.o
+i2_fputs 2008 0 CODE 0 text28 dist/default/production\pwm.X.production.o
+start_initialization 2166 0 CODE 0 cinit dist/default/production\pwm.X.production.o
+i2strcpy@dest 5 0 COMRAM 1 cstackCOMRAM dist/default/production\pwm.X.production.o
+i2_putch 2210 0 CODE 0 text30 dist/default/production\pwm.X.production.o
+UART_Init@n 107 0 BANK1 1 cstackBANK1 dist/default/production\pwm.X.production.o
+__HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\pwm.X.production.o
+___aldiv@quotient B6 0 BANK0 1 cstackBANK0 dist/default/production\pwm.X.production.o
+___rparam_used 1 0 ABS 0 - dist/default/production\pwm.X.production.o
+__pcstackBANK0 80 0 BANK0 1 cstackBANK0 dist/default/production\pwm.X.production.o
+__pcstackBANK1 100 0 BANK1 1 cstackBANK1 dist/default/production\pwm.X.production.o
+i2dtoa@d 1E 0 COMRAM 1 cstackCOMRAM dist/default/production\pwm.X.production.o
+i2dtoa@i 3E 0 COMRAM 1 cstackCOMRAM dist/default/production\pwm.X.production.o
+i2dtoa@n 36 0 COMRAM 1 cstackCOMRAM dist/default/production\pwm.X.production.o
+i2dtoa@p 30 0 COMRAM 1 cstackCOMRAM dist/default/production\pwm.X.production.o
+i2dtoa@s 34 0 COMRAM 1 cstackCOMRAM dist/default/production\pwm.X.production.o
+i2dtoa@w 32 0 COMRAM 1 cstackCOMRAM dist/default/production\pwm.X.production.o
+i2sprintf@f 5D 0 COMRAM 1 cstackCOMRAM dist/default/production\pwm.X.production.o
+i2sprintf@s 56 0 COMRAM 1 cstackCOMRAM dist/default/production\pwm.X.production.o
+_TMR1ON 7E68 0 ABS 0 - dist/default/production\pwm.X.production.o
+valor_equivalente@correspondencia 7 0 COMRAM 1 cstackCOMRAM dist/default/production\pwm.X.production.o
+isa$xinst 0 0 ABS 0 - C:\Users\vitor\AppData\Local\Temp\xcAs6mg.o
+__end_ofi2_vfprintf 1E64 0 CODE 0 text23 dist/default/production\pwm.X.production.o
+fputc@fp AE 0 BANK0 1 cstackBANK0 dist/default/production\pwm.X.production.o
+fputs@fp B7 0 BANK0 1 cstackBANK0 dist/default/production\pwm.X.production.o
+i2vfprintf@ap 53 0 COMRAM 1 cstackCOMRAM dist/default/production\pwm.X.production.o
+i2vfprintf@fp 50 0 COMRAM 1 cstackCOMRAM dist/default/production\pwm.X.production.o
+__Hbank0 0 0 ABS 0 bank0 dist/default/production\pwm.X.production.o
+__Hbank1 0 0 ABS 0 bank1 dist/default/production\pwm.X.production.o
+__Hbank2 0 0 ABS 0 bank2 dist/default/production\pwm.X.production.o
+__Hbank3 0 0 ABS 0 bank3 dist/default/production\pwm.X.production.o
+__Hbank4 0 0 ABS 0 bank4 dist/default/production\pwm.X.production.o
+__Hbank5 0 0 ABS 0 bank5 dist/default/production\pwm.X.production.o
+__Hcinit 0 0 ABS 0 cinit dist/default/production\pwm.X.production.o
+__Hconst 0 0 CONST 0 const dist/default/production\pwm.X.production.o
+__end_of_strcat 21D4 0 CODE 0 text1 dist/default/production\pwm.X.production.o
+__end_of_strcpy 2074 0 CODE 0 text2 dist/default/production\pwm.X.production.o
+__end_of_strlen 213C 0 CODE 0 text8 dist/default/production\pwm.X.production.o
+__Hidata 0 0 CODE 0 idata dist/default/production\pwm.X.production.o
+__Hidloc 200008 0 IDLOC 5 idloc dist/default/production\pwm.X.production.o
+__Hnvbit 0 0 COMRAM 1 nvbit dist/default/production\pwm.X.production.o
+__Hparam 0 0 COMRAM 1 rparam dist/default/production\pwm.X.production.o
+__Hrdata 0 0 COMRAM 1 rdata dist/default/production\pwm.X.production.o
+__Hstack 0 0 STACK 2 stack dist/default/production\pwm.X.production.o
+__Htext0 0 0 ABS 0 text0 dist/default/production\pwm.X.production.o
+__Htext1 0 0 ABS 0 text1 dist/default/production\pwm.X.production.o
+__Htext2 0 0 ABS 0 text2 dist/default/production\pwm.X.production.o
+__Htext3 0 0 ABS 0 text3 dist/default/production\pwm.X.production.o
+__Htext4 0 0 ABS 0 text4 dist/default/production\pwm.X.production.o
+__Htext5 0 0 ABS 0 text5 dist/default/production\pwm.X.production.o
+__Htext6 0 0 ABS 0 text6 dist/default/production\pwm.X.production.o
+__Htext7 0 0 ABS 0 text7 dist/default/production\pwm.X.production.o
+__Htext8 0 0 ABS 0 text8 dist/default/production\pwm.X.production.o
+__Htext9 0 0 ABS 0 text9 dist/default/production\pwm.X.production.o
+__Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\pwm.X.production.o
+__Hbigram 0 0 ABS 0 bigram dist/default/production\pwm.X.production.o
+__Hbigsfr 0 0 ABS 0 bigsfr dist/default/production\pwm.X.production.o
+__smallconst 600 0 SMALLCONST 0 smallconst C:\Users\vitor\AppData\Local\Temp\xcAs6mg.o
+__end_of_sprintf 1EFC 0 CODE 0 text3 dist/default/production\pwm.X.production.o
+__Hcomram 0 0 ABS 0 comram dist/default/production\pwm.X.production.o
+__Hconfig 30000E 0 CONFIG 4 config dist/default/production\pwm.X.production.o
+i2_vfpfcnvrt 1006 0 CODE 0 text24 dist/default/production\pwm.X.production.o
+i2___aodiv@counter 11 0 COMRAM 1 cstackCOMRAM dist/default/production\pwm.X.production.o
+_valorAMos D2 0 BANK0 1 bssBANK0 dist/default/production\pwm.X.production.o
+__Lbank0 0 0 ABS 0 bank0 dist/default/production\pwm.X.production.o
+__Lbank1 0 0 ABS 0 bank1 dist/default/production\pwm.X.production.o
+__Lbank2 0 0 ABS 0 bank2 dist/default/production\pwm.X.production.o
+__Lbank3 0 0 ABS 0 bank3 dist/default/production\pwm.X.production.o
+__Lbank4 0 0 ABS 0 bank4 dist/default/production\pwm.X.production.o
+__Lbank5 0 0 ABS 0 bank5 dist/default/production\pwm.X.production.o
+__Lcinit 0 0 ABS 0 cinit dist/default/production\pwm.X.production.o
+__Lconst 0 0 CONST 0 const dist/default/production\pwm.X.production.o
+__Lidata 0 0 CODE 0 idata dist/default/production\pwm.X.production.o
+__Lidloc 0 0 IDLOC 5 idloc dist/default/production\pwm.X.production.o
+__Lnvbit 0 0 COMRAM 1 nvbit dist/default/production\pwm.X.production.o
+__Lparam 0 0 COMRAM 1 rparam dist/default/production\pwm.X.production.o
+__Lrdata 0 0 COMRAM 1 rdata dist/default/production\pwm.X.production.o
+__Lstack 0 0 STACK 2 stack dist/default/production\pwm.X.production.o
+__Ltext0 0 0 ABS 0 text0 dist/default/production\pwm.X.production.o
+__Ltext1 0 0 ABS 0 text1 dist/default/production\pwm.X.production.o
+__Ltext2 0 0 ABS 0 text2 dist/default/production\pwm.X.production.o
+__Ltext3 0 0 ABS 0 text3 dist/default/production\pwm.X.production.o
+__Ltext4 0 0 ABS 0 text4 dist/default/production\pwm.X.production.o
+__Ltext5 0 0 ABS 0 text5 dist/default/production\pwm.X.production.o
+__Ltext6 0 0 ABS 0 text6 dist/default/production\pwm.X.production.o
+__Ltext7 0 0 ABS 0 text7 dist/default/production\pwm.X.production.o
+__Ltext8 0 0 ABS 0 text8 dist/default/production\pwm.X.production.o
+__Ltext9 0 0 ABS 0 text9 dist/default/production\pwm.X.production.o
+__Hfarbss 0 0 FARRAM 0 farbss dist/default/production\pwm.X.production.o
+?i2_sprintf 56 0 COMRAM 1 cstackCOMRAM dist/default/production\pwm.X.production.o
+i2pad@buf 13 0 COMRAM 1 cstackCOMRAM dist/default/production\pwm.X.production.o
+__Lintcode_body 0 0 ABS 0 intcode_body dist/default/production\pwm.X.production.o
+_PORTBbits F81 0 ABS 0 - dist/default/production\pwm.X.production.o
+_PORTCbits F82 0 ABS 0 - dist/default/production\pwm.X.production.o
+_INTCONbits FF2 0 ABS 0 - dist/default/production\pwm.X.production.o
+__Habs1 0 0 ABS 0 abs1 dist/default/production\pwm.X.production.o
+__Hdata 0 0 ABS 0 data dist/default/production\pwm.X.production.o
+__Hheap 0 0 HEAP 7 heap dist/default/production\pwm.X.production.o
+__Hinit 12 0 CODE 0 init dist/default/production\pwm.X.production.o
+__Hrbit 0 0 COMRAM 1 rbit dist/default/production\pwm.X.production.o
+__Hrbss 0 0 COMRAM 1 rbss dist/default/production\pwm.X.production.o
+__Htemp 77 0 COMRAM 1 temp dist/default/production\pwm.X.production.o
+__Htext 0 0 ABS 0 text dist/default/production\pwm.X.production.o
+__Labs1 0 0 ABS 0 abs1 dist/default/production\pwm.X.production.o
+__Ldata 0 0 ABS 0 data dist/default/production\pwm.X.production.o
+__Lheap 0 0 HEAP 7 heap dist/default/production\pwm.X.production.o
+__Linit E 0 CODE 0 init dist/default/production\pwm.X.production.o
+__Lrbit 0 0 COMRAM 1 rbit dist/default/production\pwm.X.production.o
+__Lrbss 0 0 COMRAM 1 rbss dist/default/production\pwm.X.production.o
+__Ltemp 76 0 COMRAM 1 temp dist/default/production\pwm.X.production.o
+__Ltext 0 0 ABS 0 text dist/default/production\pwm.X.production.o
+i2pad@fp 11 0 COMRAM 1 cstackCOMRAM dist/default/production\pwm.X.production.o
+___aodiv@counter AC 0 BANK0 1 cstackBANK0 dist/default/production\pwm.X.production.o
+___wmul 218C 0 CODE 0 text37 dist/default/production\pwm.X.production.o
+___aomod@sign AD 0 BANK0 1 cstackBANK0 dist/default/production\pwm.X.production.o
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/production\pwm.X.production.o
+__LcstackBANK1 0 0 ABS 0 cstackBANK1 dist/default/production\pwm.X.production.o
+int$flags 76 0 COMRAM 1 temp dist/default/production\pwm.X.production.o
+__HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\pwm.X.production.o
+__end_ofi2_UART_PutC 220E 0 CODE 0 text35 dist/default/production\pwm.X.production.o
+__Hintret 0 0 ABS 0 intret dist/default/production\pwm.X.production.o
+__Hirdata 0 0 CODE 0 irdata dist/default/production\pwm.X.production.o
+__S0 2212 0 ABS 0 - dist/default/production\pwm.X.production.o
+__S1 18F 0 ABS 0 - dist/default/production\pwm.X.production.o
+__S4 0 0 ABS 0 - dist/default/production\pwm.X.production.o
+__S5 0 0 ABS 0 - dist/default/production\pwm.X.production.o
+_abs 2074 0 CODE 0 text12 dist/default/production\pwm.X.production.o
+_isr 8 0 CODE 0 intcode dist/default/production\pwm.X.production.o
+_pad 1A9A 0 CODE 0 text7 dist/default/production\pwm.X.production.o
+i2___aodiv@dividend 1 0 COMRAM 1 cstackCOMRAM dist/default/production\pwm.X.production.o
+i2vfprintf@cfmt 55 0 COMRAM 1 cstackCOMRAM dist/default/production\pwm.X.production.o
+i2UART_Print@data 2 0 COMRAM 1 cstackCOMRAM dist/default/production\pwm.X.production.o
+_tempo_echo BA 0 BANK0 1 bssBANK0 dist/default/production\pwm.X.production.o
+i2_strcat 21D4 0 CODE 0 text20 dist/default/production\pwm.X.production.o
+i2_strcpy 20A8 0 CODE 0 text21 dist/default/production\pwm.X.production.o
+i2_strlen 213C 0 CODE 0 text27 dist/default/production\pwm.X.production.o
+_valor_tara CA 0 BANK0 1 bssBANK0 dist/default/production\pwm.X.production.o
+___aodiv@sign AD 0 BANK0 1 cstackBANK0 dist/default/production\pwm.X.production.o
+i2fputc@fp 3 0 COMRAM 1 cstackCOMRAM dist/default/production\pwm.X.production.o
+i2fputs@fp C 0 COMRAM 1 cstackCOMRAM dist/default/production\pwm.X.production.o
+__Lbigdata 0 0 BIGRAM 1 bigdata dist/default/production\pwm.X.production.o
+__Hnvrram 0 0 COMRAM 1 nvrram dist/default/production\pwm.X.production.o
+sprintf@fmt 14C 0 BANK1 1 cstackBANK1 dist/default/production\pwm.X.production.o
+_dtoa$1121 122 0 BANK1 1 cstackBANK1 dist/default/production\pwm.X.production.o
+_flag_MEDIR 16B 0 BANK1 1 bssBANK1 dist/default/production\pwm.X.production.o
+__end_ofi2_strcat 21F6 0 CODE 0 text20 dist/default/production\pwm.X.production.o
+__end_ofi2_strcpy 20DC 0 CODE 0 text21 dist/default/production\pwm.X.production.o
+__end_ofi2_strlen 2166 0 CODE 0 text27 dist/default/production\pwm.X.production.o
+__end_of_abs 20A8 0 CODE 0 text12 dist/default/production\pwm.X.production.o
+__end_of_isr 9EE 0 CODE 0 intcode_body dist/default/production\pwm.X.production.o
+__end_of_pad 1B46 0 CODE 0 text7 dist/default/production\pwm.X.production.o
+int_func 608 0 CODE 0 intcode_body dist/default/production\pwm.X.production.o
+__Lintentry 0 0 ABS 0 intentry dist/default/production\pwm.X.production.o
+strcpy@d B4 0 BANK0 1 cstackBANK0 dist/default/production\pwm.X.production.o
+strcpy@s B6 0 BANK0 1 cstackBANK0 dist/default/production\pwm.X.production.o
+__Hramtop 600 0 RAM 0 ramtop dist/default/production\pwm.X.production.o
+strlen@a AE 0 BANK0 1 cstackBANK0 dist/default/production\pwm.X.production.o
+strlen@s AC 0 BANK0 1 cstackBANK0 dist/default/production\pwm.X.production.o
+__Hrparam 0 0 COMRAM 1 rparam dist/default/production\pwm.X.production.o
+_indice D0 0 BANK0 1 bssBANK0 dist/default/production\pwm.X.production.o
+__activetblptr 2 0 ABS 0 - dist/default/production\pwm.X.production.o
+__Hstruct 0 0 COMRAM 1 struct dist/default/production\pwm.X.production.o
+__LbssBANK0 0 0 ABS 0 bssBANK0 dist/default/production\pwm.X.production.o
+__LbssBANK1 0 0 ABS 0 bssBANK1 dist/default/production\pwm.X.production.o
+__Htext10 0 0 ABS 0 text10 dist/default/production\pwm.X.production.o
+__Htext11 0 0 ABS 0 text11 dist/default/production\pwm.X.production.o
+__Htext12 0 0 ABS 0 text12 dist/default/production\pwm.X.production.o
+__Htext13 0 0 ABS 0 text13 dist/default/production\pwm.X.production.o
+__Htext14 0 0 ABS 0 text14 dist/default/production\pwm.X.production.o
+__Htext15 0 0 ABS 0 text15 dist/default/production\pwm.X.production.o
+__Htext16 0 0 ABS 0 text16 dist/default/production\pwm.X.production.o
+__Htext17 0 0 ABS 0 text17 dist/default/production\pwm.X.production.o
+__Htext18 0 0 ABS 0 text18 dist/default/production\pwm.X.production.o
+__Htext20 0 0 ABS 0 text20 dist/default/production\pwm.X.production.o
+__Htext21 0 0 ABS 0 text21 dist/default/production\pwm.X.production.o
+__Htext22 0 0 ABS 0 text22 dist/default/production\pwm.X.production.o
+__Htext23 0 0 ABS 0 text23 dist/default/production\pwm.X.production.o
+__Htext24 0 0 ABS 0 text24 dist/default/production\pwm.X.production.o
+__Htext25 0 0 ABS 0 text25 dist/default/production\pwm.X.production.o
+__Htext26 0 0 ABS 0 text26 dist/default/production\pwm.X.production.o
+__Htext27 0 0 ABS 0 text27 dist/default/production\pwm.X.production.o
+__Htext28 0 0 ABS 0 text28 dist/default/production\pwm.X.production.o
+__Htext29 0 0 ABS 0 text29 dist/default/production\pwm.X.production.o
+__Htext30 0 0 ABS 0 text30 dist/default/production\pwm.X.production.o
+__Htext31 0 0 ABS 0 text31 dist/default/production\pwm.X.production.o
+__Htext32 0 0 ABS 0 text32 dist/default/production\pwm.X.production.o
+__Htext33 0 0 ABS 0 text33 dist/default/production\pwm.X.production.o
+__Htext34 0 0 ABS 0 text34 dist/default/production\pwm.X.production.o
+__Htext35 0 0 ABS 0 text35 dist/default/production\pwm.X.production.o
+__Htext36 0 0 ABS 0 text36 dist/default/production\pwm.X.production.o
+__Htext37 0 0 ABS 0 text37 dist/default/production\pwm.X.production.o
+__Htext38 0 0 ABS 0 text38 dist/default/production\pwm.X.production.o
+__Htext39 0 0 ABS 0 text39 dist/default/production\pwm.X.production.o
+vfpfcnvrt@fmt 136 0 BANK1 1 cstackBANK1 dist/default/production\pwm.X.production.o
+i2fputc@c 1 0 COMRAM 1 cstackCOMRAM dist/default/production\pwm.X.production.o
+i2fputs@c E 0 COMRAM 1 cstackCOMRAM dist/default/production\pwm.X.production.o
+i2fputs@i F 0 COMRAM 1 cstackCOMRAM dist/default/production\pwm.X.production.o
+i2fputs@s A 0 COMRAM 1 cstackCOMRAM dist/default/production\pwm.X.production.o
+___awmod@counter 5 0 COMRAM 1 cstackCOMRAM dist/default/production\pwm.X.production.o
+pad@buf 105 0 BANK1 1 cstackBANK1 dist/default/production\pwm.X.production.o
+__ptext10 1B46 0 CODE 0 text10 dist/default/production\pwm.X.production.o
+__ptext11 220E 0 CODE 0 text11 dist/default/production\pwm.X.production.o
+__ptext12 2074 0 CODE 0 text12 dist/default/production\pwm.X.production.o
+__ptext13 1566 0 CODE 0 text13 dist/default/production\pwm.X.production.o
+__ptext14 1174 0 CODE 0 text14 dist/default/production\pwm.X.production.o
+__ptext15 1F86 0 CODE 0 text15 dist/default/production\pwm.X.production.o
+__ptext16 21F6 0 CODE 0 text16 dist/default/production\pwm.X.production.o
+__ptext17 16A0 0 CODE 0 text17 dist/default/production\pwm.X.production.o
+__ptext18 19CE 0 CODE 0 text18 dist/default/production\pwm.X.production.o
+__ptext20 21D4 0 CODE 0 text20 dist/default/production\pwm.X.production.o
+__ptext21 20A8 0 CODE 0 text21 dist/default/production\pwm.X.production.o
+__ptext22 1F42 0 CODE 0 text22 dist/default/production\pwm.X.production.o
+__ptext23 1E14 0 CODE 0 text23 dist/default/production\pwm.X.production.o
+__ptext24 1006 0 CODE 0 text24 dist/default/production\pwm.X.production.o
+__ptext25 C4A 0 CODE 0 text25 dist/default/production\pwm.X.production.o
+__ptext26 1C86 0 CODE 0 text26 dist/default/production\pwm.X.production.o
+__ptext27 213C 0 CODE 0 text27 dist/default/production\pwm.X.production.o
+__ptext28 2008 0 CODE 0 text28 dist/default/production\pwm.X.production.o
+__ptext29 1BE6 0 CODE 0 text29 dist/default/production\pwm.X.production.o
+__ptext30 2210 0 CODE 0 text30 dist/default/production\pwm.X.production.o
+__ptext31 20DC 0 CODE 0 text31 dist/default/production\pwm.X.production.o
+__ptext32 17CA 0 CODE 0 text32 dist/default/production\pwm.X.production.o
+__ptext33 12DA 0 CODE 0 text33 dist/default/production\pwm.X.production.o
+__ptext34 1FC8 0 CODE 0 text34 dist/default/production\pwm.X.production.o
+__ptext35 2202 0 CODE 0 text35 dist/default/production\pwm.X.production.o
+__ptext36 18EE 0 CODE 0 text36 dist/default/production\pwm.X.production.o
+__ptext37 218C 0 CODE 0 text37 dist/default/production\pwm.X.production.o
+__ptext38 1DA4 0 CODE 0 text38 dist/default/production\pwm.X.production.o
+__ptext39 1D20 0 CODE 0 text39 dist/default/production\pwm.X.production.o
+___aldiv 19CE 0 CODE 0 text18 dist/default/production\pwm.X.production.o
+___aodiv 1174 0 CODE 0 text14 dist/default/production\pwm.X.production.o
+___aomod 1566 0 CODE 0 text13 dist/default/production\pwm.X.production.o
+___awdiv 1D20 0 CODE 0 text39 dist/default/production\pwm.X.production.o
+___awmod 1DA4 0 CODE 0 text38 dist/default/production\pwm.X.production.o
+__pintcode_body 608 0 CODE 0 intcode_body dist/default/production\pwm.X.production.o
+__Lbigbss 0 0 BIGRAM 1 bigbss dist/default/production\pwm.X.production.o
+__Lbigram 0 0 ABS 0 bigram dist/default/production\pwm.X.production.o
+__Lbigsfr 0 0 ABS 0 bigsfr dist/default/production\pwm.X.production.o
+?_dtoa 110 0 BANK1 1 cstackBANK1 dist/default/production\pwm.X.production.o
+__Lcomram 0 0 ABS 0 comram dist/default/production\pwm.X.production.o
+__Lconfig 0 0 CONFIG 4 config dist/default/production\pwm.X.production.o
+___wmul@multiplier 1 0 COMRAM 1 cstackCOMRAM dist/default/production\pwm.X.production.o
+__Lfarbss 0 0 FARRAM 0 farbss dist/default/production\pwm.X.production.o
+_strcat 21B2 0 CODE 0 text1 dist/default/production\pwm.X.production.o
+_strcpy 2040 0 CODE 0 text2 dist/default/production\pwm.X.production.o
+_strlen 210E 0 CODE 0 text8 dist/default/production\pwm.X.production.o
+__Lfardata 0 0 FARRAM 0 fardata dist/default/production\pwm.X.production.o
+isa$std 1 0 ABS 0 - C:\Users\vitor\AppData\Local\Temp\xcAs6mg.o
+isr@str 80 0 BANK0 1 cstackBANK0 dist/default/production\pwm.X.production.o
+stackhi 0 0 ABS 0 - C:\Users\vitor\AppData\Local\Temp\xcAs6mg.o
+stacklo 0 0 ABS 0 - C:\Users\vitor\AppData\Local\Temp\xcAs6mg.o
+?i2_dtoa 1C 0 COMRAM 1 cstackCOMRAM dist/default/production\pwm.X.production.o
+i2___aodiv@divisor 9 0 COMRAM 1 cstackCOMRAM dist/default/production\pwm.X.production.o
+__Lintcode 8 0 CODE 0 intcode dist/default/production\pwm.X.production.o
+__Lintret 0 0 ABS 0 intret dist/default/production\pwm.X.production.o
+__Lirdata 0 0 CODE 0 irdata dist/default/production\pwm.X.production.o
+__end_ofi2___aodiv 1422 0 CODE 0 text33 dist/default/production\pwm.X.production.o
+__end_ofi2___aomod 18EE 0 CODE 0 text32 dist/default/production\pwm.X.production.o
+strcpy@dest B0 0 BANK0 1 cstackBANK0 dist/default/production\pwm.X.production.o
+i2strcpy@d 9 0 COMRAM 1 cstackCOMRAM dist/default/production\pwm.X.production.o
+i2strcpy@s B 0 COMRAM 1 cstackCOMRAM dist/default/production\pwm.X.production.o
+i2strlen@a 3 0 COMRAM 1 cstackCOMRAM dist/default/production\pwm.X.production.o
+i2strlen@s 1 0 COMRAM 1 cstackCOMRAM dist/default/production\pwm.X.production.o
+?_vfpfcnvrt 134 0 BANK1 1 cstackBANK1 dist/default/production\pwm.X.production.o
+strcat@src B9 0 BANK0 1 cstackBANK0 dist/default/production\pwm.X.production.o
+UART_PutC@data AC 0 BANK0 1 cstackBANK0 dist/default/production\pwm.X.production.o
+__Lspace_0 0 0 ABS 0 - dist/default/production\pwm.X.production.o
+__Lspace_1 0 0 ABS 0 - dist/default/production\pwm.X.production.o
+__Lspace_2 0 0 ABS 0 - dist/default/production\pwm.X.production.o
+__Lspace_4 0 0 ABS 0 - dist/default/production\pwm.X.production.o
+_isr$1401 A8 0 BANK0 1 cstackBANK0 dist/default/production\pwm.X.production.o
+_isr$1402 AA 0 BANK0 1 cstackBANK0 dist/default/production\pwm.X.production.o
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/production\pwm.X.production.o
+__HcstackBANK1 0 0 ABS 0 cstackBANK1 dist/default/production\pwm.X.production.o
+___aodiv@divisor 108 0 BANK1 1 cstackBANK1 dist/default/production\pwm.X.production.o
+___aodiv@dividend 100 0 BANK1 1 cstackBANK1 dist/default/production\pwm.X.production.o
+__LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\pwm.X.production.o
+end_of_initialization 217E 0 CODE 0 cinit dist/default/production\pwm.X.production.o
+?i2_vfprintf 50 0 COMRAM 1 cstackCOMRAM dist/default/production\pwm.X.production.o
+__Lnvrram 0 0 COMRAM 1 nvrram dist/default/production\pwm.X.production.o
+__Hintentry 0 0 ABS 0 intentry dist/default/production\pwm.X.production.o
+_RCONbits FD0 0 ABS 0 - dist/default/production\pwm.X.production.o
+fputc@c AC 0 BANK0 1 cstackBANK0 dist/default/production\pwm.X.production.o
+fputs@c 100 0 BANK1 1 cstackBANK1 dist/default/production\pwm.X.production.o
+fputs@i 101 0 BANK1 1 cstackBANK1 dist/default/production\pwm.X.production.o
+fputs@s B5 0 BANK0 1 cstackBANK0 dist/default/production\pwm.X.production.o
+___awdiv@quotient D 0 COMRAM 1 cstackCOMRAM dist/default/production\pwm.X.production.o
+?___aldiv AC 0 BANK0 1 cstackBANK0 dist/default/production\pwm.X.production.o
+?___aodiv 100 0 BANK1 1 cstackBANK1 dist/default/production\pwm.X.production.o
+?___aomod 100 0 BANK1 1 cstackBANK1 dist/default/production\pwm.X.production.o
+?___awdiv 7 0 COMRAM 1 cstackCOMRAM dist/default/production\pwm.X.production.o
+?___awmod 1 0 COMRAM 1 cstackCOMRAM dist/default/production\pwm.X.production.o
+vfprintf@fmt 146 0 BANK1 1 cstackBANK1 dist/default/production\pwm.X.production.o
+i2___aodiv 12DA 0 CODE 0 text33 dist/default/production\pwm.X.production.o
+i2___aomod 17CA 0 CODE 0 text32 dist/default/production\pwm.X.production.o
+__Hreset_vec 4 0 CODE 0 reset_vec dist/default/production\pwm.X.production.o
+UART_Init@baud_rate 100 0 BANK1 1 cstackBANK1 dist/default/production\pwm.X.production.o
+__HbssBANK0 0 0 ABS 0 bssBANK0 dist/default/production\pwm.X.production.o
+__HbssBANK1 0 0 ABS 0 bssBANK1 dist/default/production\pwm.X.production.o
+i2strcat@dest C 0 COMRAM 1 cstackCOMRAM dist/default/production\pwm.X.production.o
+___awmod@dividend 1 0 COMRAM 1 cstackCOMRAM dist/default/production\pwm.X.production.o
+__Lramtop 600 0 RAM 0 ramtop dist/default/production\pwm.X.production.o
+__end_of_UART_Init 17CA 0 CODE 0 text17 dist/default/production\pwm.X.production.o
+__end_of_UART_PutC 2202 0 CODE 0 text16 dist/default/production\pwm.X.production.o
+__Lrparam 0 0 COMRAM 1 rparam dist/default/production\pwm.X.production.o
+__pcinit 2166 0 CODE 0 cinit dist/default/production\pwm.X.production.o
+i2_UART_Print 1FC8 0 CODE 0 text34 dist/default/production\pwm.X.production.o
+?i2_strlen 1 0 COMRAM 1 cstackCOMRAM dist/default/production\pwm.X.production.o
+UART_Print@i AF 0 BANK0 1 cstackBANK0 dist/default/production\pwm.X.production.o
+vfpfcnvrt@ap 138 0 BANK1 1 cstackBANK1 dist/default/production\pwm.X.production.o
+vfpfcnvrt@fp 134 0 BANK1 1 cstackBANK1 dist/default/production\pwm.X.production.o
+vfpfcnvrt@ll 13C 0 BANK1 1 cstackBANK1 dist/default/production\pwm.X.production.o
+__ptext0 1422 0 CODE 0 text0 dist/default/production\pwm.X.production.o
+__ptext1 21B2 0 CODE 0 text1 dist/default/production\pwm.X.production.o
+__ptext2 2040 0 CODE 0 text2 dist/default/production\pwm.X.production.o
+__ptext3 1EB2 0 CODE 0 text3 dist/default/production\pwm.X.production.o
+__ptext4 1E64 0 CODE 0 text4 dist/default/production\pwm.X.production.o
+__ptext5 E90 0 CODE 0 text5 dist/default/production\pwm.X.production.o
+__ptext6 9EE 0 CODE 0 text6 dist/default/production\pwm.X.production.o
+__ptext7 1A9A 0 CODE 0 text7 dist/default/production\pwm.X.production.o
+__ptext8 210E 0 CODE 0 text8 dist/default/production\pwm.X.production.o
+__ptext9 1EFC 0 CODE 0 text9 dist/default/production\pwm.X.production.o
+__Lstruct 0 0 COMRAM 1 struct dist/default/production\pwm.X.production.o
+vfprintf@ap 147 0 BANK1 1 cstackBANK1 dist/default/production\pwm.X.production.o
+vfprintf@fp 144 0 BANK1 1 cstackBANK1 dist/default/production\pwm.X.production.o
+vfprintf@cfmt 149 0 BANK1 1 cstackBANK1 dist/default/production\pwm.X.production.o
+__Ltext10 0 0 ABS 0 text10 dist/default/production\pwm.X.production.o
+__Ltext11 0 0 ABS 0 text11 dist/default/production\pwm.X.production.o
+__Ltext12 0 0 ABS 0 text12 dist/default/production\pwm.X.production.o
+__Ltext13 0 0 ABS 0 text13 dist/default/production\pwm.X.production.o
+__Ltext14 0 0 ABS 0 text14 dist/default/production\pwm.X.production.o
+__Ltext15 0 0 ABS 0 text15 dist/default/production\pwm.X.production.o
+__Ltext16 0 0 ABS 0 text16 dist/default/production\pwm.X.production.o
+__Ltext17 0 0 ABS 0 text17 dist/default/production\pwm.X.production.o
+__Ltext18 0 0 ABS 0 text18 dist/default/production\pwm.X.production.o
+__Ltext20 0 0 ABS 0 text20 dist/default/production\pwm.X.production.o
+__Ltext21 0 0 ABS 0 text21 dist/default/production\pwm.X.production.o
+__Ltext22 0 0 ABS 0 text22 dist/default/production\pwm.X.production.o
+__Ltext23 0 0 ABS 0 text23 dist/default/production\pwm.X.production.o
+__Ltext24 0 0 ABS 0 text24 dist/default/production\pwm.X.production.o
+__Ltext25 0 0 ABS 0 text25 dist/default/production\pwm.X.production.o
+__Ltext26 0 0 ABS 0 text26 dist/default/production\pwm.X.production.o
+__Ltext27 0 0 ABS 0 text27 dist/default/production\pwm.X.production.o
+__Ltext28 0 0 ABS 0 text28 dist/default/production\pwm.X.production.o
+__Ltext29 0 0 ABS 0 text29 dist/default/production\pwm.X.production.o
+__Ltext30 0 0 ABS 0 text30 dist/default/production\pwm.X.production.o
+__Ltext31 0 0 ABS 0 text31 dist/default/production\pwm.X.production.o
+__Ltext32 0 0 ABS 0 text32 dist/default/production\pwm.X.production.o
+__Ltext33 0 0 ABS 0 text33 dist/default/production\pwm.X.production.o
+__Ltext34 0 0 ABS 0 text34 dist/default/production\pwm.X.production.o
+__Ltext35 0 0 ABS 0 text35 dist/default/production\pwm.X.production.o
+__Ltext36 0 0 ABS 0 text36 dist/default/production\pwm.X.production.o
+__Ltext37 0 0 ABS 0 text37 dist/default/production\pwm.X.production.o
+__Ltext38 0 0 ABS 0 text38 dist/default/production\pwm.X.production.o
+__Ltext39 0 0 ABS 0 text39 dist/default/production\pwm.X.production.o
+_valor_display 16D 0 BANK1 1 bssBANK1 dist/default/production\pwm.X.production.o
+__ramtop 600 0 RAM 0 ramtop C:\Users\vitor\AppData\Local\Temp\xcAs6mg.o
+___aldiv@dividend AC 0 BANK0 1 cstackBANK0 dist/default/production\pwm.X.production.o
+_sprintf 1EB2 0 CODE 0 text3 dist/default/production\pwm.X.production.o
+_vfprintf 1E64 0 CODE 0 text4 dist/default/production\pwm.X.production.o
+i2_dtoa$1121 2E 0 COMRAM 1 cstackCOMRAM dist/default/production\pwm.X.production.o
+__Lpowerup E 0 CODE 0 powerup dist/default/production\pwm.X.production.o
+__Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\pwm.X.production.o
+sprintf@ap 14F 0 BANK1 1 cstackBANK1 dist/default/production\pwm.X.production.o
+__psmallconst 600 0 SMALLCONST 0 smallconst dist/default/production\pwm.X.production.o
+__end_ofi2_dtoa E90 0 CODE 0 text25 dist/default/production\pwm.X.production.o
+__Lreset_vec 0 0 CODE 0 reset_vec dist/default/production\pwm.X.production.o
+_UART_Init 16A0 0 CODE 0 text17 dist/default/production\pwm.X.production.o
+_UART_PutC 21F6 0 CODE 0 text16 dist/default/production\pwm.X.production.o
+__end_of_vfprintf 1EB2 0 CODE 0 text4 dist/default/production\pwm.X.production.o
+___heap_hi 0 0 ABS 0 - C:\Users\vitor\AppData\Local\Temp\xcAs6mg.o
+___heap_lo 0 0 ABS 0 - C:\Users\vitor\AppData\Local\Temp\xcAs6mg.o
+__end_ofi2_vfpfcnvrt 1174 0 CODE 0 text24 dist/default/production\pwm.X.production.o
+___param_bank 0 0 ABS 0 - dist/default/production\pwm.X.production.o
+__Hbigdata 0 0 BIGRAM 1 bigdata dist/default/production\pwm.X.production.o
+strcpy@src B2 0 BANK0 1 cstackBANK0 dist/default/production\pwm.X.production.o
+__end_of__initialization 217E 0 CODE 0 cinit dist/default/production\pwm.X.production.o
+___awmod@divisor 3 0 COMRAM 1 cstackCOMRAM dist/default/production\pwm.X.production.o
+__Libigdata 0 0 CODE 0 ibigdata dist/default/production\pwm.X.production.o
+__Lclrtext 0 0 ABS 0 clrtext dist/default/production\pwm.X.production.o
+__end_ofi2_sprintf 1F86 0 CODE 0 text22 dist/default/production\pwm.X.production.o
+__end_of_valor_equivalente 19CE 0 CODE 0 text36 dist/default/production\pwm.X.production.o
+_medindo CE 0 BANK0 1 bssBANK0 dist/default/production\pwm.X.production.o
+__pcstackCOMRAM 1 0 COMRAM 1 cstackCOMRAM dist/default/production\pwm.X.production.o
+___aldiv@counter B4 0 BANK0 1 cstackBANK0 dist/default/production\pwm.X.production.o
+sprintf@f 151 0 BANK1 1 cstackBANK1 dist/default/production\pwm.X.production.o
+sprintf@s 14A 0 BANK1 1 cstackBANK1 dist/default/production\pwm.X.production.o
+__end_of_dtoa C4A 0 CODE 0 text6 dist/default/production\pwm.X.production.o
+__end_of_main 1566 0 CODE 0 text0 dist/default/production\pwm.X.production.o
+__pintcode 8 0 CODE 0 intcode dist/default/production\pwm.X.production.o
+__end_of_fputc 1BE6 0 CODE 0 text10 dist/default/production\pwm.X.production.o
+__end_of_fputs 1F42 0 CODE 0 text9 dist/default/production\pwm.X.production.o
+?_sprintf 14A 0 BANK1 1 cstackBANK1 dist/default/production\pwm.X.production.o
+_PORTD F83 0 ABS 0 - dist/default/production\pwm.X.production.o
+_RCREG FAE 0 ABS 0 - dist/default/production\pwm.X.production.o
+_RCSTA FAB 0 ABS 0 - dist/default/production\pwm.X.production.o
+_SPBRG FAF 0 ABS 0 - dist/default/production\pwm.X.production.o
+_T1CON FCD 0 ABS 0 - dist/default/production\pwm.X.production.o
+_TMR0H FD7 0 ABS 0 - dist/default/production\pwm.X.production.o
+_TMR0L FD6 0 ABS 0 - dist/default/production\pwm.X.production.o
+_TMR1H FCF 0 ABS 0 - dist/default/production\pwm.X.production.o
+_TMR1L FCE 0 ABS 0 - dist/default/production\pwm.X.production.o
+_TRISB F93 0 ABS 0 - dist/default/production\pwm.X.production.o
+_TRISC F94 0 ABS 0 - dist/default/production\pwm.X.production.o
+_TRISD F95 0 ABS 0 - dist/default/production\pwm.X.production.o
+_TXREG FAD 0 ABS 0 - dist/default/production\pwm.X.production.o
+_TXSTA FAC 0 ABS 0 - dist/default/production\pwm.X.production.o
+__end_of_putch 2210 0 CODE 0 text11 dist/default/production\pwm.X.production.o
+__HRAM 0 0 ABS 0 - dist/default/production\pwm.X.production.o
+__Hbss 0 0 RAM 1 bss dist/default/production\pwm.X.production.o
+__Hram 0 0 ABS 0 ram dist/default/production\pwm.X.production.o
+__Hsfr 0 0 ABS 0 sfr dist/default/production\pwm.X.production.o
+__LRAM 1 0 ABS 0 - dist/default/production\pwm.X.production.o
+__Lbss 0 0 RAM 1 bss dist/default/production\pwm.X.production.o
+__Lram 0 0 ABS 0 ram dist/default/production\pwm.X.production.o
+__Lsfr 0 0 ABS 0 sfr dist/default/production\pwm.X.production.o
+i2_sprintf 1F42 0 CODE 0 text22 dist/default/production\pwm.X.production.o
+_flags C2 0 BANK0 1 bssBANK0 dist/default/production\pwm.X.production.o
+_fputc 1B46 0 CODE 0 text10 dist/default/production\pwm.X.production.o
+_fputs 1EFC 0 CODE 0 text9 dist/default/production\pwm.X.production.o
+_flag_TARA 169 0 BANK1 1 bssBANK1 dist/default/production\pwm.X.production.o
+_putch 220E 0 CODE 0 text11 dist/default/production\pwm.X.production.o
+?i2_abs 13 0 COMRAM 1 cstackCOMRAM dist/default/production\pwm.X.production.o
+?i2_pad 11 0 COMRAM 1 cstackCOMRAM dist/default/production\pwm.X.production.o
+_width BE 0 BANK0 1 bssBANK0 dist/default/production\pwm.X.production.o
+__end_ofi2_UART_Print 2008 0 CODE 0 text34 dist/default/production\pwm.X.production.o
+__end_ofi2_fputc 1C86 0 CODE 0 text29 dist/default/production\pwm.X.production.o
+__end_ofi2_fputs 2040 0 CODE 0 text28 dist/default/production\pwm.X.production.o
+__end_ofi2_putch 2212 0 CODE 0 text30 dist/default/production\pwm.X.production.o
+__initialization 2166 0 CODE 0 cinit dist/default/production\pwm.X.production.o
+__pbssBANK0 BA 0 BANK0 1 bssBANK0 dist/default/production\pwm.X.production.o
+__pbssBANK1 165 0 BANK1 1 bssBANK1 dist/default/production\pwm.X.production.o
+i2strcat@src E 0 COMRAM 1 cstackCOMRAM dist/default/production\pwm.X.production.o
+__Hfardata 0 0 FARRAM 0 fardata dist/default/production\pwm.X.production.o
+___wmul@product 5 0 COMRAM 1 cstackCOMRAM dist/default/production\pwm.X.production.o
+__Hsmallconst 608 0 SMALLCONST 0 smallconst dist/default/production\pwm.X.production.o
+dtoa@d 112 0 BANK1 1 cstackBANK1 dist/default/production\pwm.X.production.o
+dtoa@i 132 0 BANK1 1 cstackBANK1 dist/default/production\pwm.X.production.o
+dtoa@n 12A 0 BANK1 1 cstackBANK1 dist/default/production\pwm.X.production.o
+dtoa@p 124 0 BANK1 1 cstackBANK1 dist/default/production\pwm.X.production.o
+dtoa@s 128 0 BANK1 1 cstackBANK1 dist/default/production\pwm.X.production.o
+dtoa@w 126 0 BANK1 1 cstackBANK1 dist/default/production\pwm.X.production.o
+__Lifardata 0 0 CODE 0 ifardata dist/default/production\pwm.X.production.o
+__Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\pwm.X.production.o
+__Hintcode E 0 CODE 0 intcode dist/default/production\pwm.X.production.o
+__end_ofi2_abs 210E 0 CODE 0 text31 dist/default/production\pwm.X.production.o
+__end_ofi2_pad 1D20 0 CODE 0 text26 dist/default/production\pwm.X.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+intcode_body 0 608 608 1C0A 1
+cstackCOMRAM 1 1 1 76 1
+cstackBANK0 1 80 80 54 1
+cstackBANK1 1 100 100 8F 1
+reset_vec 0 0 0 4 1
+intcode 0 8 8 A 1
+smallconst 0 600 600 8 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
